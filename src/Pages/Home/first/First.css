@@ -1,0 +1,18 @@
+.First {
+    height: 423px;
+    margin-top: 123px;
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+}
+
+.First-one {
+   width: 60%;
+    flex-basis: 60%;
+    background-color: aqua;
+}
+.First-tow {
+   width: 50%;
+    flex-basis: 50%;
+    background-color: rgb(10, 228, 57);
+}

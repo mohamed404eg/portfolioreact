@@ -44,7 +44,6 @@ body{
 }
 
 .portFolio {
-
 display: flex;
 justify-content: space-between;
 background: var(--primary-background-color);
@@ -55,8 +54,7 @@ background: var(--primary-background-color);
   float: left;
   flex-basis: 5%;
 }
-.a2{
- 
+.container{
   flex-basis: 90%;
   max-width: 1024px;
 }
@@ -66,6 +64,9 @@ background: var(--primary-background-color);
   flex-basis: 5%;
 }
 
+.container1024 {
+  max-width: 1024px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

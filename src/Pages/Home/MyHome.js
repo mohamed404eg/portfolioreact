@@ -1,14 +1,16 @@
 import React from 'react'
 import MyHeader from './MyHeader'
+import First from './first/First'
 
 
 
 function Home() {
   return (
-    <div>
-      
+    <>
       <MyHeader ></MyHeader>
-    </div>
+      <First></First>
+    </>
+    
   )
 }
 

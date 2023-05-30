@@ -1,19 +1,80 @@
 .SelectLanguage {
-    float: right;
-   margin-right: 10px;
-   background-color: var(--primary-background-color);
-}
-.SelectLanguage select {
-
-   background-color: var(--primary-background-color);
-   color: var(--gray);
-   border: none;
-   outline: none;
-}
-.SelectLanguage select option *{
-padding: 5px;
-margin: 5px;
+  float: right;
+  margin-right: 10px;
+  background-color: var(--primary-background-color);
+  color: var(--gray);
+  cursor: pointer;
+  font-family: "Fira Code";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
 }
 
+.SelectedLanguage label {
+   cursor: pointer;
+}
 
-/*style the arrow inside the select element:*/
+/* SelectLanguageStyle group Btn  */
+.SelectLanguageStyle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* width: 34px; */
+  /* height: 21px; */
+  border: 1px solid #abb2bf;
+  display: none;
+  margin-top: 2px;
+}
+.SelectLanguageStyleAppear {
+  display: flex !important;
+}
+.SelectLanguageStyleNoteAppear {
+  display: none !important;
+}
+
+.SelectLanguageStyle button {
+  background-color: var(--primary-background-color);
+  color: var(--gray);
+  border: 0 !important;
+  outline: none;
+  cursor: pointer;
+  line-height: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* ===SelectLanguageStyle group Btn===  */
+
+.option {
+  padding-top: 5px;
+  background-color: #282c33;
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.option:last-child {
+  padding-bottom: 5px;
+}
+
+#languageInput {
+  width: 0;
+  position: absolute;
+  z-index: -999;
+}
+/* arrow */
+.arrow {
+  padding-left: 4px;
+  bottom: 1px;
+  position: relative;
+}
+
+.arrowDeg{
+   transition: all 400ms;
+}
+
+.arrowDeg180 {
+   transform: rotate(180deg);
+}

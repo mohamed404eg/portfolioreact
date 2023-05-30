@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
     <div className="portFolio">
     <div className='a1'>1 </div>
-    <div className='a2'>
+    <div className='container'>
     <Home></Home>
     </div>
     <div className='a3'>3</div>
