@@ -1,6 +1,7 @@
 import React from "react";
 import Firstcss from "./First.css";
 import FirstButton from "./FirstButton";
+
 function First() {
   return (
     <div className="First">
@@ -17,8 +18,16 @@ function First() {
       {/*== First one == */}
       {/* First tow */}
       <div className="First-tow">
-        <img src="" alt=""></img>
+        <img src={"./assets/img/First-towImg.png"} alt=""></img>
+        <img src={"./assets/img/Logo.svg"} alt=""></img>
+        <img src={"./assets/img/Dots.svg"} alt=""></img>
+
+        <div>
+          <span></span>
+          <p>Currently working on Portfolio</p>
+        </div>
       </div>
+
       {/* ==First tow== */}
     </div>
   );
