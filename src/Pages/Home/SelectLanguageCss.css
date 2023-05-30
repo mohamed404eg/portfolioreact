@@ -1,0 +1,19 @@
+.SelectLanguage {
+    float: right;
+   margin-right: 10px;
+   background-color: var(--primary-background-color);
+}
+.SelectLanguage select {
+
+   background-color: var(--primary-background-color);
+   color: var(--gray);
+   border: none;
+   outline: none;
+}
+.SelectLanguage select option *{
+padding: 5px;
+margin: 5px;
+}
+
+
+/*style the arrow inside the select element:*/

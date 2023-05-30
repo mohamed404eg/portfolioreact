@@ -1,0 +1,105 @@
+/* NavItem */
+.NavItem {
+  /* Auto layout */
+
+  padding: 0px;
+
+  min-width: 49px;
+  height: 21px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* # */
+.NavItemHash {
+  width: 10px;
+  height: 21px;
+
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* primary */
+
+  color: var(--primary);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.NavItemA {
+  width: 39px;
+  height: 21px;
+
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* white */
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.NavAll {
+  position: relative;
+  bottom: 8px;
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+
+  height: 21px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.NavItemTitle {
+  width: 48px;
+  height: 21px;
+
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* gray */
+
+  color: var(--gray);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  transition: all ease 400ms;
+}
+
+.NavItemTitleACTIVE {
+  color: var(--white) !important;
+}
