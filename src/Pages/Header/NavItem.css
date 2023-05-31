@@ -75,6 +75,7 @@
   flex: none;
   order: 1;
   flex-grow: 0;
+
 }
 
 .NavItemTitle {
@@ -102,4 +103,12 @@
 
 .NavItemTitleACTIVE {
   color: var(--white) !important;
+}
+
+
+@media screen and (max-width:630px){
+  .NavAll { 
+    display: none;
+  }
+  
 }
