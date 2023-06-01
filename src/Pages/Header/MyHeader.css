@@ -1,60 +1,81 @@
-
-
 .MyHeader {
-        height: 61px;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+  height: 61px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
-
 .LogoImgText {
-    height: 21px;
-    width: 72px;
-    display: flex;
-    justify-content: space-between;
+  height: 21px;
+  width: 72px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .LogoText {
-    
-width: 48px;
-height: 21px;
+  width: 48px;
+  height: 21px;
 
-font-family: 'Fira Code';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 21px;
-/* identical to box height */
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
 
+  /* white */
 
-/* white */
+  color: #ffffff;
 
-color: #FFFFFF;
+  /* Inside auto layout */
 
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
-
-/*  */
-padding: 0;
-margin: 0;
-
+  /*  */
+  padding: 0;
+  margin: 0;
 }
 
 .LogoSvg {
-    width: 16px;
-height: 16px;
+  width: 16px;
+  height: 16px;
 
-transform: matrix(1, 0, 0, -1, 0, 0);
+  transform: matrix(1, 0, 0, -1, 0, 0);
 
-/* Inside auto layout */
+  /* Inside auto layout */
 
-flex: none;
-order: 0;
-flex-grow: 0;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
+/* menu */
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  top: 30px;
+  position: absolute;
+  right: 34px;
+}
+
+.menu span:first-child {
+  content: " ";
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--menu-color);
+}
+
+.menu span:last-child {
+    content: " ";
+    margin-top: 3px;
+    width: 15px;
+    height: 2px;
+    left: 9px;
+    position: relative;
+    display: block;
+  background-color: var(--menu-color);
+}
