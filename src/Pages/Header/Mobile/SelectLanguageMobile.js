@@ -1,31 +1,31 @@
-import React, { useRef, useState } from "react";
-import SelectLanguageCss from "./SelectLanguageCss.css";
+import React, { useEffect, useRef, useState } from "react";
+import SelectLanguageMobile from "./SelectLanguageMobile.css";
 export default function SelectLanguage() {
   let [language, setLanguage] = useState("EN");
-  let [languagehtmlFor, setLanguagehtmlFor] = useState("languageInput");
+  let [languagehtmlFor, setLanguagehtmlFor] = useState("languageInputMobile");
   let GroupBtnRef = useRef();
   let arrowRef = useRef();
   const handleLanguageArrowFocus = () => {
     console.log("handleLanguageArrowFocus");
-    GroupBtnRef.current.classList.toggle("SelectLanguageStyleAppear");
+    GroupBtnRef.current.classList.toggle("SelectLanguageStyleAppearMobile");
     // arrow
-    if (!arrowRef.current.classList.contains("arrowDeg180")) {
-      arrowRef.current.classList.toggle("arrowDeg180");
-    }
+    arrowRef.current.classList.toggle("arrowDeg180");
     // arrow \\
   };
   const handleLanguageArrowBlur = () => {
+    console.log("handleLanguageArrowBlur");
     setTimeout(() => {
-      GroupBtnRef.current.classList.toggle("SelectLanguageStyleAppear");
-    }, 150);
+      GroupBtnRef.current.classList.toggle("SelectLanguageStyleAppearMobile");
+    }, 90);
 
     // htmlFor
     setLanguagehtmlFor(" ");
     setTimeout(() => {
-      setLanguagehtmlFor("languageInput");
+      setLanguagehtmlFor((e) => (e = "languageInputMobile"));
     }, 150);
 
     // htmlFor \\
+
     // arrow
     if (arrowRef.current.classList.contains("arrowDeg180")) {
       arrowRef.current.classList.toggle("arrowDeg180");
@@ -34,16 +34,13 @@ export default function SelectLanguage() {
   };
 
   function handleLanguage(event) {
-    setLanguage(event.target.name);
-
+    setLanguage((e) => (e = event.target.name));
     setTimeout(() => {
-      GroupBtnRef.current.classList.remove("SelectLanguageStyleAppear");
+      GroupBtnRef.current.classList.remove("SelectLanguageStyleAppearMobile");
     }, 150);
 
     // arrow
-    if (arrowRef.current.classList.contains("arrowDeg180")) {
-      arrowRef.current.classList.toggle("arrowDeg180");
-    }
+    arrowRef.current.classList.remove("arrowDeg180");
     // arrow \\
   }
 
@@ -53,38 +50,50 @@ export default function SelectLanguage() {
     // arrow \\
     // Group Btn Ref
     setTimeout(() => {
-      GroupBtnRef.current.classList.toggle("SelectLanguageStyleAppear");
+      GroupBtnRef.current.classList.toggle("SelectLanguageStyleAppearMobile");
     }, 150);
     // Group Btn Ref \\
   };
 
+  useEffect(handleLanguageArrowBlur, [language]);
+
   return (
     <>
       {/* Appear selectedLanguage */}
-      <div className="SelectLanguage">
+      <div className="SelectLanguageMobile">
         {/* // Appear selectedLanguage \\ */}
         <div className="SelectedLanguage">
           <label htmlFor={languagehtmlFor}>{language}</label>
+
+          <select
+            id="languageInputMobile"
+            onBlur={handleLanguageArrowBlur}
+            onFocus={handleLanguageArrowFocus}
+          ></select>
+
+          {/* 
           <input
             onBlur={handleLanguageArrowBlur}
             onFocus={handleLanguageArrowFocus}
             type="text"
             name="languageInput"
-            id="languageInput"
+            id="languageInputMobile"
             value={language}
+            disabled
             onChange={(event) => {
               handleLanguageArrowBlur();
               console.log("  c");
             }}
-          ></input>
+
+          ></input> */}
 
           {/* arrow */}
-          <span className="arrow" onClick={handArrowSPAN}>
+          <span className="arrowMobile" onClick={handArrowSPAN}>
             <svg
               className="arrowDeg"
               ref={arrowRef}
               width="10"
-              height="7"
+              height="10"
               viewBox="0 0 10 7"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +118,7 @@ export default function SelectLanguage() {
           </span>
           {/* arrow  \\*/}
         </div>
-        <div className="SelectLanguageStyle" ref={GroupBtnRef}>
+        <div className="SelectLanguageStyleMobile" ref={GroupBtnRef}>
           <button onClick={handleLanguage} name="EN" className="option">
             EN
           </button>

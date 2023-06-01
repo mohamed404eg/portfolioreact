@@ -1,0 +1,83 @@
+.SelectLanguageMobile {
+  float: right;
+  margin-right: 10px;
+  background-color: var(--primary-background-color);
+  color: var(--gray);
+  cursor: pointer;
+  height: 42px;
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.SelectedLanguage label {
+   cursor: pointer;
+}
+
+/* SelectLanguageStyle group Btn  */
+.SelectLanguageStyleMobile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* width: 34px; */
+  /* height: 21px; */
+  border: 1px solid #abb2bf;
+  display: none;
+  margin-top: 2px;
+}
+.SelectLanguageStyleAppearMobile {
+  display: flex !important;
+}
+.SelectLanguageStyleNoteAppearMobile {
+  display: none !important;
+}
+
+.SelectLanguageStyleMobile button {
+  background-color: var(--primary-background-color);
+  color: var(--gray);
+  border: 0 !important;
+  outline: none;
+  cursor: pointer;
+  line-height: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* ===SelectLanguageStyle group Btn===  */
+
+.option {
+  padding-top: 5px;
+  background-color: #282c33;
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.option:last-child {
+  padding-bottom: 5px;
+}
+
+#languageInputMobile {
+  height: 0;
+  width: 0;
+  position: absolute;
+  z-index: -999;
+}
+/* arrow */
+.arrowMobile {
+  padding-left: 4px;
+  bottom:7px;
+  position: relative;
+}
+
+.arrowDeg{
+   transition: all 400ms;
+}
+
+.arrowDeg180 {
+   transform: rotate(180deg);
+}

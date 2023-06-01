@@ -1,0 +1,56 @@
+.NavAllMobileDiv {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #282c33;
+  z-index: 9999;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 16px 8px;
+  animation: log 400ms;
+}
+
+
+
+
+@keyframes log {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.HeadNvMobile90 {
+  width: 90%;
+}
+
+.NavAllMobile {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  position: relative;
+  top: 95px;
+  width: 174px;
+}
+
+.HeadNvMobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Headeclose {
+  cursor: pointer;
+}
+@media screen and (min-width: 630px) {
+  .NavAllMobileDiv {
+    display: none;
+  }
+}

@@ -59,6 +59,7 @@
   top: 30px;
   position: absolute;
   right: 34px;
+  cursor: pointer;
 }
 
 .menu span:first-child {
@@ -78,4 +79,8 @@
     position: relative;
     display: block;
   background-color: var(--menu-color);
+}
+
+@media screen and (min-width:630px){ 
+  .menu { display: none;}
 }

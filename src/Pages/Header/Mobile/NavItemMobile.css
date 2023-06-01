@@ -1,5 +1,5 @@
 /* NavItem */
-.NavItem {
+.NavItemMobile {
   /* Auto layout */
 
   padding: 0px;
@@ -15,15 +15,15 @@
 }
 
 /* # */
-.NavItemHash {
-  width: 10px;
-  height: 21px;
+.NavItemHashMobile {
+  width: 20px;
+  height: 42px;
 
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 32px;
+  line-height: 42px;
   /* identical to box height */
 
   /* primary */
@@ -37,15 +37,15 @@
   flex-grow: 0;
 }
 
-.NavItemA {
+.NavItemAMobile {
   width: 39px;
   height: 21px;
 
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 32px;
+  line-height: 42px;
   /* identical to box height */
 
   /* white */
@@ -75,18 +75,17 @@
   flex: none;
   order: 1;
   flex-grow: 0;
-
 }
 
-.NavItemTitle {
+.NavItemTitleMobile {
   width: 48px;
   height: 21px;
 
   font-family: "Fira Code";
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
   /* identical to box height */
 
   /* gray */
@@ -101,21 +100,44 @@
   transition: all ease 400ms;
 }
 
-.NavItemTitleACTIVE {
+.NavItemTitleACTIVEMobile {
   color: var(--white) !important;
 }
 
-
-@media screen and (max-width:630px){
-  .NavAll { 
+@media screen and (max-width: 630px) {
+  .NavAll {
     display: none;
   }
-  
 }
 
-@media screen and (min-width:630px){
-  .NavAll { 
+@media screen and (min-width: 630px) {
+  .NavAll {
     display: flex;
   }
+}
 
+/* Social Mobile */
+.SocialMobileDIV {
+  position: absolute;
+  bottom: 36px;
+  display: block;
+  width: 90%;
+}
+.SocialMobile {
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.SocialMobile  svg:first-child { 
+
+  width: 46px;
+}
+ 
+.SocialMobile  svg { 
+  cursor: pointer;
+ height: 64px;
 }

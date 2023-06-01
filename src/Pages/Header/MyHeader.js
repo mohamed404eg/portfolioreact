@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 // css
 import MyHeader from "./MyHeader.css";
 // css \\
- 
+
 import MyAllNav from "./MyAllNav";
+import MyAllNavMobile from "./Mobile/MyAllNavMobile";
 
 import SelectLanguage from "./SelectLanguage";
 function Header() {
+  const [menuOpen, SetMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    SetMenuOpen(!menuOpen);
+  };
+
   return (
     <header className="MyHeader">
       <div className="LogoImgText">
@@ -33,17 +40,15 @@ function Header() {
         </Link>
       </div>
 
-
-           <div className="menu">
-            <span></span>
-            <span></span>
-           </div>
-        <MyAllNav></MyAllNav>
-       
-
-     
-   
-
+      <div className="menu" onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+      </div>
+      <MyAllNav></MyAllNav>
+      <MyAllNavMobile
+        menuOpen={menuOpen}
+        toggleMenu={toggleMenu}
+      ></MyAllNavMobile>
     </header>
   );
 }
