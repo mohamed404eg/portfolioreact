@@ -25,43 +25,39 @@
 }
 
 :root {
-  --primary: #C778DD;
-  --second: #ABB2BF;
-  --white: #FFFFFF;
-  --gray: #ABB2BF;
-  --menu-color:#D9D9D9;
-  --primary-background-color: #282C33;
+  --primary: #c778dd;
+  --second: #abb2bf;
+  --white: #ffffff;
+  --gray: #abb2bf;
+  --menu-color: #d9d9d9;
+  --primary-background-color: #282c33;
 }
 
 a {
   text-decoration: none;
 }
 
-
-body{
+body {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
 .portFolio {
-display: flex;
-justify-content: space-between;
-background: var(--primary-background-color);
+  display: flex;
+  justify-content: space-between;
+  background: var(--primary-background-color);
 }
 
-.a1{
-
+.a1 {
   float: left;
   flex-basis: 5%;
 }
-.container{
+.container {
   flex-basis: 90%;
   max-width: 1024px;
 }
-.a3{
-
-
+.a3 {
   flex-basis: 5%;
 }
 
@@ -100,5 +96,37 @@ background: var(--primary-background-color);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .a1 {
+    float: left;
+    flex-basis: 0;
+  }
+  .container {
+    flex-basis: calc(100% - 10px);
+    max-width: 1024px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .a3 {
+    flex-basis: 0;
+  }
+}
+
+@media screen and (max-width: 275px) {
+  .a1 {
+    float: left;
+    flex-basis: 0;
+  }
+  .container {
+    flex-basis: calc(100% - 2px);
+    max-width: 1024px;
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  .a3 {
+    flex-basis: 0;
   }
 }

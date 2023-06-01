@@ -1,7 +1,7 @@
 import React from 'react'
-
+import FirstButtonCss from './FirstButton.css'
 export default function FirstButton() {
   return (
-    <button>FirstBotton</button>
+    <button className='ContactMeBtn'>Contact me!!</button>
   )
 }

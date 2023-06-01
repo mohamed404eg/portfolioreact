@@ -10,9 +10,12 @@
   right: 0;
   padding: 16px 16px 8px;
   animation: log 400ms;
+
 }
 
-
+.overflow {
+  overflow: hidden;
+}
 
 
 @keyframes log {

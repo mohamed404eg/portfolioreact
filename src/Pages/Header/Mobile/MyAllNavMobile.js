@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavItemMobile from "./NavItemMobile";
 import SelectLanguageMobile from "./SelectLanguageMobile";
 import MyAllNavMobilecss from "./MyAllNavMobile.css";
@@ -41,6 +41,9 @@ export default function MyAllNavMobile({ menuOpen, toggleMenu }) {
     );
   });
 
+  useEffect(()=>{
+    document.querySelector("body").classList.toggle("overflow");
+  }, [menuOpen])
   if (menuOpen) {
     return (
       <div className="NavAllMobileDiv">

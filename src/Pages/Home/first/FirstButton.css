@@ -1,0 +1,31 @@
+.ContactMeBtn {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  background: var(--primary-background-color);
+  color: var(--wihte);
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 16px;
+  height: 37px;
+
+  /* primary */
+
+  border: 1px solid var(--primary);
+
+  cursor: pointer;
+}
+
+@media screen and (max-width: 630px) {
+  .ContactMeBtn {
+    display: none;
+  }
+}

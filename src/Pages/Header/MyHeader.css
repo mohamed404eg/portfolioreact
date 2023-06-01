@@ -2,7 +2,7 @@
   height: 61px;
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
 }
 
 .LogoImgText {
@@ -60,6 +60,8 @@
   position: absolute;
   right: 34px;
   cursor: pointer;
+  width: 24px;
+  height: 24px;
 }
 
 .menu span:first-child {
@@ -79,6 +81,12 @@
     position: relative;
     display: block;
   background-color: var(--menu-color);
+  transition: all 400ms;
+}
+
+.menu:hover > span:last-child {
+  left: 4.5px;
+
 }
 
 @media screen and (min-width:630px){ 

@@ -1,18 +1,139 @@
 .First {
-    height: 423px;
-    margin-top: 123px;
-    color: var(--white);
-    display: flex;
-    flex-direction: row;
+  height: 423px;
+  margin-top: 123px;
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
 }
 
 .First-one {
-   width: 60%;
-    flex-basis: 60%;
-    background-color: aqua;
+  width: 60%;
+  flex-basis: 60%;
 }
+
+/* First one */
+.First-one h2 {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+
+  /* white */
+
+  color: #ffffff;
+}
+.First-one h2 span:is(:first-child, :last-child) {
+  color: var(--primary);
+}
+
+.First-one p {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--gray);
+}
+
+/* First tow */
 .First-tow {
-   width: 50%;
-    flex-basis: 50%;
-    background-color: rgb(10, 228, 57);
+  width: 50%;
+  flex-basis: 50%;
+  position: relative;
+}
+
+.First-tow-background {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../assets/Home/First-towImg.png");
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 100;
+}
+.First-tow-Logo {
+  position: absolute;
+  top: 84px;
+  left: -12px;
+}
+.First-tow-Dots {
+  width: 84px;
+  height: 84px;
+  position: absolute;
+  top: 246px;
+  right: 16px;
+  z-index: 100;
+}
+
+.First-tow-welcome {
+  border: 1px solid var(--gray);
+  position: absolute;
+  bottom: -15px;
+  z-index: 100;
+  height: 33px;
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+  gap: 10px;
+  width: 93%;
+  background-color: var(--primary-background-color);
+}
+
+.First-tow-welcome span {
+  width: 16px;
+  height: 16px;
+  background: var(--primary);
+}
+
+@media screen and (max-width: 630px) {
+  .First {
+    height: auto;
+    margin-top: 82px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+  .First-one {
+    width: 100%;
+    flex-basis: 90%;
+  }
+
+  /* First tow */
+
+  .First-tow {
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .First-tow-background {
+    width: 100%;
+    height: 387px;
+    background-image: url("../../../assets/Home/First-towImg.png");
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 100;
+    background-size: contain;
+    background-position: center 79%;
+  }
+
+  .First-tow-Logo {
+    position: absolute;
+    top: 175px;
+    left: -3px;
+    width: 91.43px;
+    height: 91.43px;
+  }
+
+  .First-tow-Dots {
+    width: 58px;
+    height: 46px;
+    position: absolute;
+    top: 270px;
+    right: 9px;
+    z-index: 100;
+  }
 }
