@@ -8,7 +8,7 @@ function Quote() {
   const [QuoteOneTop, setQuoteOneTop] = useState();
   const QuoteOneTopRef = useRef();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     // RightSideDiv-Rectangle-1  === QuoteOne
     let Rectangle1Top = QuoteOneTopRef.current.getBoundingClientRect();
     Rectangle1Top = Rectangle1Top.y - 14;

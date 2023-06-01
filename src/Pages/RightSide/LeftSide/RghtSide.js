@@ -14,7 +14,6 @@ function RightSide() {
   };
   return (
     <div className="RightSideDiv">
-      {console.log("4")}
       <span
         style={{ top: Rectangle1Top + "px" }}
         className="RightSideDiv-Rectangle-1"

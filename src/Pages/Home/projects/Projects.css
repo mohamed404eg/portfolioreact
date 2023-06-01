@@ -1,0 +1,102 @@
+.ProjectsDiv {
+  margin-top: 137px;
+  margin-bottom: 300px;
+}
+.ProjectsOne {
+}
+
+.ProjectsOneDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ProjectsOneDivElements {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.ProjectsOneDivElements h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: var(--white);
+}
+
+.ProjectsOneDivHash {
+  width: 20px;
+  height: 42px;
+
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+
+  /* primary */
+
+  color: var(--primary);
+}
+
+.ProjectsOneDivLine {
+  width: calc(40% - 20px);
+  height: 1px;
+
+  /* primary */
+
+  background: var(--primary);
+  margin-left: 16px;
+  margin-right: 4px;
+}
+
+/* Projects One Div Tow */
+
+.ProjectsOneDivTow {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  cursor: pointer;
+}
+.ProjectsOneDivTow span {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--white);
+  transition: all 400ms;
+}
+
+.ProjectsOneDivTow span:hover {
+  color: var(--primary);
+}
+
+.ProjectsOneDivTow span:last-child:hover {
+  animation: ProjectsOneDivTowSpan 1s 100ms forwards;
+}
+
+@keyframes  ProjectsOneDivTowSpan{
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 275px) {
+  .ProjectsOneDiv {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ProjectsOneDivLine {
+    display: none;
+  }
+}
