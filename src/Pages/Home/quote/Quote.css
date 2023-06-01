@@ -1,0 +1,72 @@
+.QuoteDiv {
+  width: 100%;
+  margin-top: 112px;
+  position: relative;
+  text-align: center;
+}
+
+.QuoteOne {
+  width: 70%;
+  /* height: 95px; */
+  /* border: 1px solid var(--gray); */
+  margin: 0 auto;
+  position: relative;
+}
+.QuoteOne2 {
+  border: 1px solid var(--gray);
+}
+.QuoteOne-Double-Quotation-one {
+  position: absolute;
+  width: 41.47px;
+  height: 28.7px;
+  left: 11px;
+  top: -14px;
+  background-color: var(--primary-background-color);
+  display: flex;
+  justify-content: center;
+}
+
+.QuoteOne-Double-Quotation-tow {
+  position: absolute;
+  width: 41.47px;
+  height: 28.7px;
+  right: 16.53px;
+  bottom: -20px;
+  background-color: var(--primary-background-color);
+  display: flex;
+  justify-content: center;
+}
+
+.Quote-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Quote-one p {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  color: var(--white);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* QuoteTow */
+
+.QuoteTow {
+  width: 162px;
+  border: 1px solid var(--gray);
+  float: right;
+  padding: 16px;
+  height: 63px;
+}
+.QuoteTow p {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: var(--white);
+}

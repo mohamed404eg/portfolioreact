@@ -69,6 +69,6 @@ export default function MyAllNavMobile({ menuOpen, toggleMenu }) {
       </div>
     );
   } else {
-    return null;
+    return <div className="NavAllMobileDivOut"></div>
   }
 }

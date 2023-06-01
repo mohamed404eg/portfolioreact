@@ -1,0 +1,34 @@
+.RightSideDiv {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(114, 114, 114, 0.171);
+  overflow-x: hidden;
+  position: relative;
+}
+
+.RightSideDiv-Line {
+  display: block;
+  content: " ";
+  width: 1px;
+  height: 191px;
+  background-color: var(--gray);
+  margin: 0 auto;
+}
+
+/* Rectangle 1 */
+.RightSideDiv-Rectangle-1 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 91px;
+  height: 91px;
+
+  /* gray */
+
+  border: 1px solid #abb2bf;
+}
+
+@media screen and (max-width: 630px) {
+  .LeftSideDiv {
+    display: none;
+  }
+}

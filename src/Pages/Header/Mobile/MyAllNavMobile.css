@@ -2,7 +2,7 @@
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: #282c33;
+  background-color: var(--primary-background-color);
   z-index: 9999;
   bottom: 0;
   top: 0;
@@ -10,13 +10,11 @@
   right: 0;
   padding: 16px 16px 8px;
   animation: log 400ms;
-
 }
 
 .overflow {
   overflow: hidden;
 }
-
 
 @keyframes log {
   0% {
@@ -25,17 +23,41 @@
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
+.NavAllMobileDivOut {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-background-color);
+  z-index: 9999;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 16px 8px;
+  animation: NavOut 400ms forwards;
+}
+@keyframes NavOut {
+  0% {
+    opacity: 1;
+    transform: translateY(-0);
+  }
+
+  100% {
+    opacity: .5;
+    transform: translateY(150%);
+  }
+}
 .HeadNvMobile90 {
   width: 90%;
 }
 
 .NavAllMobile {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 32px;

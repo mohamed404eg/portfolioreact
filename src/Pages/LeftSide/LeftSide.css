@@ -1,0 +1,34 @@
+.LeftSideDiv {
+  width: 100%;
+  height: 100%;
+}
+
+.LeftSideDiv-Line {
+  display: block;
+  content: " ";
+  width: 1px;
+  height: 191px;
+  background-color: var(--gray);
+  margin: 0 auto;
+}
+.LeftSideDiv-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 32px;
+  height: 112px;
+  margin: 8px auto auto auto;
+}
+.LeftSideDiv-media svg {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 630px) {
+  .LeftSideDiv {
+    display: none;
+  }
+}

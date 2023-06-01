@@ -2,6 +2,7 @@ import React from 'react'
 import MyHeader from '../Header/MyHeader'
 import First from './first/First'
 import MyHomeCss from './MyHome.css'
+import Quote from './quote/Quote'
 
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
     <div className='HomeBody'>
       <MyHeader ></MyHeader>
       <First></First>
+      <Quote></Quote>
     </div>
     
   )

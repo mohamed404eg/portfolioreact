@@ -49,7 +49,7 @@ body {
   background: var(--primary-background-color);
 }
 
-.a1 {
+.LeftSide {
   float: left;
   flex-basis: 5%;
 }
@@ -57,7 +57,7 @@ body {
   flex-basis: 90%;
   max-width: 1024px;
 }
-.a3 {
+.RightSide {
   flex-basis: 5%;
 }
 
@@ -100,7 +100,23 @@ body {
 }
 
 @media screen and (max-width: 630px) {
-  .a1 {
+  .LeftSide {
+    float: left;
+    flex-basis: 0;
+  }
+  .container {
+    flex-basis: calc(100% - 20px);
+    max-width: 1024px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .RightSide {
+    flex-basis: 0;
+  }
+}
+
+@media screen and (max-width: 275px) {
+  .LeftSide {
     float: left;
     flex-basis: 0;
   }
@@ -110,23 +126,7 @@ body {
     margin-left: 5px;
     margin-right: 5px;
   }
-  .a3 {
-    flex-basis: 0;
-  }
-}
-
-@media screen and (max-width: 275px) {
-  .a1 {
-    float: left;
-    flex-basis: 0;
-  }
-  .container {
-    flex-basis: calc(100% - 2px);
-    max-width: 1024px;
-    margin-left: 1px;
-    margin-right: 1px;
-  }
-  .a3 {
+  .RightSide {
     flex-basis: 0;
   }
 }
