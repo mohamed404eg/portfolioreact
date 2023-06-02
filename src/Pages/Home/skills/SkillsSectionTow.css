@@ -1,0 +1,12 @@
+.SkillsSectionTow {
+  position: relative;
+  width: 100%;
+  display: grid;
+  background-color: aquamarine !important;
+}
+
+
+.SkillsSectionTow-Languages {
+    background-color: rgb(255, 60, 0) ;
+  
+}

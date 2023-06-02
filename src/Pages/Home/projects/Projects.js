@@ -1,7 +1,15 @@
+import { useEffect, useLayoutEffect, useRef } from "react";
+import { RightSideHandle } from "../../RightSide/LeftSide/RghtSide";
 import ProjectsCss from "./Projects.css";
 import ProjectsTow from "./ProjectsTow";
 
 function Projects() {
+  // Rectangle-2 == ProjectsTow
+  const Rectangle2 = useRef();
+  useEffect(() => {
+    RightSideHandle("RightSideDiv-Rectangle-2", Rectangle2.current.offsetTop);
+  }, []);
+  // Rectangle-2 \\
   return (
     <div className="ProjectsDiv">
       <div className="ProjectsOne">
@@ -19,7 +27,7 @@ function Projects() {
           </div>
         </div>
       </div>
-      <div className="ProjectsTow">
+      <div className="ProjectsTow" ref={Rectangle2}>
         <ProjectsTow></ProjectsTow>
       </div>
     </div>

@@ -20,7 +20,19 @@
   position: absolute;
   width: 91px;
   height: 91px;
+  left: 0px;
+  /* gray */
 
+  border: 1px solid #abb2bf;
+}
+
+/* Rectangle 2 */
+.RightSideDiv-Rectangle-2 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 155px;
+  height: 155px;
+  left: 0px;
   /* gray */
 
   border: 1px solid #abb2bf;

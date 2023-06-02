@@ -6,7 +6,6 @@ import ProjectJson from "../../../data/Projects.json";
 
 function ProjectsTow() {
   let ProjectMap = ProjectJson.map((project) => {
-
     return (
       <Project
         key={project.id}
@@ -48,8 +47,16 @@ function Project({
         <h4>{title}</h4>
         <p>{description}</p>
         <div className="ProjectLinks">
-          <Link to={btnTitleHref}>{btnTitle}</Link>
-          <Link to={btnTitleHref2}>{btnTitle2}</Link>
+          {btnTitle !== "" && btnTitle !== null ? (
+            <Link to={btnTitleHref}>{btnTitle}</Link>
+          ) : (
+            ""
+          )}
+          {btnTitle2 !== "" && btnTitle2 !== null ? (
+            <Link to={btnTitleHref2}>{btnTitle2}</Link>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>

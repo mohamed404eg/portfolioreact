@@ -5,20 +5,20 @@ import { useRef } from "react";
 import { RightSideHandle } from "../../RightSide/LeftSide/RghtSide";
 
 function Quote() {
-  const [QuoteOneTop, setQuoteOneTop] = useState();
   const QuoteOneTopRef = useRef();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     // RightSideDiv-Rectangle-1  === QuoteOne
-    let Rectangle1Top = QuoteOneTopRef.current.getBoundingClientRect();
-    Rectangle1Top = Rectangle1Top.y - 14;
-    RightSideHandle("RightSideDiv-Rectangle-1", Rectangle1Top);
+    RightSideHandle(
+      "RightSideDiv-Rectangle-1",
+      QuoteOneTopRef.current.offsetTop
+    );
     // RightSideDiv-Rectangle-1  === QuoteOne \\
-  });
+  }, []);
 
   return (
-    <div className="QuoteDiv">
-      <div className="QuoteOne" ref={QuoteOneTopRef}>
+    <div ref={QuoteOneTopRef} className="QuoteDiv">
+      <div className="QuoteOne">
         <div className="QuoteOne2">
           <span className="QuoteOne-Double-Quotation-one">
             <DoubleQuotationRight />

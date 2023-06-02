@@ -4,6 +4,7 @@ import First from "./first/First";
 import MyHomeCss from "./MyHome.css";
 import Quote from "./quote/Quote";
 import Projects from "./projects/Projects";
+import Skills from "./skills/Skills";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <First></First>
       <Quote></Quote>
       <Projects />
+      <Skills />
     </div>
   );
 }
