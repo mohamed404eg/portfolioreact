@@ -1,5 +1,11 @@
 .ProjectsTowDiv {
-    background-color: azure;
-    height: 428px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px;
+    gap: 16px;
+    margin-top: 48px;
 }
