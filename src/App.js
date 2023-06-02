@@ -17,7 +17,6 @@ function App() {
         </div>
         <div className="RightSide">
           <RightSide></RightSide>
-        
         </div>
       </div>
     </BrowserRouter>

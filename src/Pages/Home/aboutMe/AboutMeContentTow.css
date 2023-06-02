@@ -1,0 +1,55 @@
+.AboutMeContentTow {
+  position: relative;
+  flex-basis: calc(60% - 10px);
+  max-width: calc(60% - 10px);
+}
+
+.AboutMeContentTow-image0 {
+  width: 100%;
+  height: 507px;
+  max-width: 339px;
+  position: relative;
+  top: -60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.AboutMeContentTow-image0Div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 339px;
+  float: right;
+}
+.AboutMeContentTow-image0Div::after {
+  content: " ";
+  position: absolute;
+  bottom: 57px;
+  height: 1px;
+  width: 80%;
+  margin-left: 20px;
+  border-bottom: 1px solid magenta;
+}
+
+.AboutMeContentTow-image1 {
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  top: 59px;
+  right: 259px;
+}
+.AboutMeContentTow-image2 {
+  position: absolute;
+  width: 104px;
+  height: 56px;
+  top: 279px;
+  right: 16px;
+}
+
+@media screen and (max-width: 630px) {
+  .AboutMeContentTow {
+    position: relative;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}

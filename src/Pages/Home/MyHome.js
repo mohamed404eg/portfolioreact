@@ -5,6 +5,7 @@ import MyHomeCss from "./MyHome.css";
 import Quote from "./quote/Quote";
 import Projects from "./projects/Projects";
 import Skills from "./skills/Skills";
+import AboutMe from "./aboutMe/AboutMe";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <Quote></Quote>
       <Projects />
       <Skills />
+      <AboutMe />
     </div>
   );
 }

@@ -1,15 +1,11 @@
-.SkillsDiv {
-  width: 100%;
-  margin-bottom: 112px;
-}
-
-.SkillsOne {
+.AboutMeTitle {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
 }
-.SkillsOneHash {
+
+.AboutMeTitleHash {
   width: 20px;
   height: 42px;
 
@@ -22,7 +18,7 @@
   color: var(--primary);
 }
 
-.SkillsOne h3 {
+.AboutMeTitle h3 {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 500;
@@ -36,56 +32,25 @@
   color: var(--white);
   margin-right: 16px;
 }
-
-.SkillsOneLine {
-  width: 40%;
+.AboutMeTitleLine {
+  width: 30%;
   height: 1px;
 
   /* primary */
-
   background: var(--primary);
 }
 
-/* Skills Tow */
-.SkillsTow {
+.AboutMeContent {
   display: flex;
   flex-direction: row;
-  column-gap: 55px;
+  flex-wrap: wrap;
+  column-gap: 10px;
 }
-
-.SkillsTow-child-1 {
-  flex-basis: 35%;
-  max-width: 35%;
-  position: relative;
-}
-.SkillsTow-child-2 {
-  flex-basis: 65%;
-  max-width: 65%;
-}
-
 
 @media screen and (max-width: 630px) {
-  .SkillsTow {
+  .AboutMeContent {
     display: flex;
     flex-direction: column;
-    column-gap: 30px;
-    row-gap: 55px;
-    width: 100% 
-  }
-
-  .SkillsTow-child-1 {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-  .SkillsTow-child-2 {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-
-@media screen and (max-width: 275px) { 
-  .SkillsTow {
-    display: flex;
+    flex-wrap: wrap;
   }
 }
