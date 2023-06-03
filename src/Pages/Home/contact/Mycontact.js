@@ -3,21 +3,21 @@ import DiscordVector from "../../../assets/Home/DiscordVector.svg";
 import EmailVector from "../../../assets/Home/EmailVector.svg";
 import { useEffect, useLayoutEffect, useRef } from "react";
 import { LeftSideHandle } from "../../LeftSide/LeftSide";
-
+import GetCoords from "../../../hooks/GetCoords";
 function Mycontact() {
   const MycontactTopRef = useRef();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     // LeftSideDiv-Rectangle-2 === Mycontact
-    let top = MycontactTopRef.current.getBoundingClientRect();
+    let Rectangle2 = MycontactTopRef.current;
 
     setTimeout(() => {
-      LeftSideHandle(
-        "LeftSideDiv-Rectangle-2",
-        top.bottom + (top.height  /2)
-      );
+      LeftSideHandle("LeftSideDiv-Rectangle-2", GetCoords(Rectangle2).top);
     }, 300);
 
+    window.addEventListener("resize", () => {
+      LeftSideHandle("LeftSideDiv-Rectangle-2", GetCoords(Rectangle2).top);
+    });
     // LeftSideDiv-Rectangle-2  === Mycontact \\
   }, []);
 
@@ -29,8 +29,8 @@ function Mycontact() {
       </div>
 
       <div className="MycontactContent">
-        <div className="MycontactContentText" >
-          <p>
+        <div className="MycontactContentText">
+          <p id="MycontactContentGET">
             I’m interested in freelance opportunities. However, if you have
             other request or question, don’t hesitate to contact me
           </p>

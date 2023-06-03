@@ -54,7 +54,6 @@
 .LogoImgText:hover > .LogoSvg
 {
   transform: rotate(360deg);
-  color: var(--primary);
 }
 
 /* menu */

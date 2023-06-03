@@ -9,10 +9,14 @@ import MyAllNav from "./MyAllNav";
 import MyAllNavMobile from "./Mobile/MyAllNavMobile";
 
 import SelectLanguage from "./SelectLanguage";
+
+// export handle open 
+let toggleMenu
+
 function Header() {
   const [menuOpen, SetMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
+   toggleMenu = () => {
     SetMenuOpen(!menuOpen);
   };
 
@@ -54,3 +58,4 @@ function Header() {
 }
 
 export default Header;
+export {toggleMenu}

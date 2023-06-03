@@ -3,6 +3,7 @@ import { ReactComponent as DoubleQuotationRight } from "../../../assets/Home/Dou
 import { useEffect, useLayoutEffect, useState } from "react";
 import { useRef } from "react";
 import { RightSideHandle } from "../../RightSide/RghtSide";
+import GetCoords from "../../../hooks/GetCoords";
 
 function Quote() {
   const QuoteOneTopRef = useRef();
@@ -11,9 +12,15 @@ function Quote() {
     // RightSideDiv-Rectangle-1  === QuoteOne
     RightSideHandle(
       "RightSideDiv-Rectangle-1",
-      QuoteOneTopRef.current.offsetTop
+      GetCoords(QuoteOneTopRef.current).top
     );
     // RightSideDiv-Rectangle-1  === QuoteOne \\
+    window.addEventListener("resize", () => {
+      RightSideHandle(
+        "RightSideDiv-Rectangle-1",
+        GetCoords(QuoteOneTopRef.current).top
+      );
+    });
   }, []);
 
   return (

@@ -3,12 +3,23 @@ import { RightSideHandle } from "../../RightSide/RghtSide";
 import ProjectsCss from "./Projects.css";
 import ProjectsTow from "./ProjectsTow";
 import { Link } from "react-router-dom";
+import GetCoords from "../../../hooks/GetCoords";
 
 function Projects() {
   // Rectangle-2 == ProjectsTow
   const Rectangle2 = useRef();
   useEffect(() => {
-    RightSideHandle("RightSideDiv-Rectangle-2", Rectangle2.current.offsetTop);
+    RightSideHandle(
+      "RightSideDiv-Rectangle-2",
+      GetCoords(Rectangle2.current).top + 100
+    );
+
+    window.addEventListener("resize", () => {
+      RightSideHandle(
+        "RightSideDiv-Rectangle-2",
+        GetCoords(Rectangle2.current).top + 100
+      );
+    });
   }, []);
   // Rectangle-2 \\
   return (
@@ -18,16 +29,14 @@ function Projects() {
           {" "}
           <div className="ProjectsOneDivElements">
             <span className="ProjectsOneDivHash">#</span>
-            <h2 >Projects</h2>
+            <h2>Projects</h2>
             <span className="ProjectsOneDivLine"></span>
           </div>
           <div className="ProjectsOneDivTow">
             <span>
-             <Link to={"/PageProjects"}>
-             {"  More"} <span>{"~>"}</span>
-             
-             </Link> 
-             
+              <Link to={"/PageProjects"}>
+                {"  More"} <span>{"~>"}</span>
+              </Link>
             </span>
           </div>
         </div>
