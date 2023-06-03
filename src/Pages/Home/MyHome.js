@@ -6,6 +6,7 @@ import Quote from "./quote/Quote";
 import Projects from "./projects/Projects";
 import Skills from "./skills/Skills";
 import AboutMe from "./aboutMe/AboutMe";
+import Mycontact from "./contact/Mycontact";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <Projects />
       <Skills />
       <AboutMe />
+      <Mycontact />
     </div>
   );
 }

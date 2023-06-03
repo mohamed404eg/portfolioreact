@@ -5,25 +5,25 @@ import { ReactComponent as Vector } from "../../assets/NavMobile/img/Vector.svg"
 import { ReactComponent as Dribble } from "../../assets/NavMobile/img/Dribble.svg";
 import { ReactComponent as Figma } from "../../assets/NavMobile/img/Figma.svg";
 import { useRef, useState } from "react";
+import Frame36Mycontacts from "../../assets/Home/Frame 36 Mycontacts.svg";
+
 let LeftSideHandle;
-let LeftSideHandle2;
+
 function LeftSide() {
   let [Rectangle1Top, setRectangle1Top] = useState("");
+  let [Rectangle2Top, setRectangle2Top] = useState("");
   LeftSideHandle = function LeftSideHandle(name, top) {
     //console.log(name, top);
     if (name === "LeftSideDiv-Rectangle-1") {
       setRectangle1Top((e) => (e = top));
     }
+    if (name === "LeftSideDiv-Rectangle-2") {
+      setRectangle2Top((e) => (e = top));
+    }
   };
 
   let Rectangle_1 = useRef();
-
-  LeftSideHandle2 = function LeftSideHandle2(name, top) {
-    if (name === "LeftSideDiv-Rectangle-1") {
-      Rectangle_1.current.style.top = top + "px";
-    }
-    console.log(Rectangle_1.current.style.top )
-  };
+  let Rectangle_2 = useRef();
 
   return (
     <div className="LeftSideDiv">
@@ -40,10 +40,18 @@ function LeftSide() {
         style={{ top: Rectangle1Top + "px" }}
         className="LeftSideDiv-Rectangle-1"
       ></span>
+
+      <img
+        ref={Rectangle_2}
+        style={{ top: Rectangle2Top + "px" }}
+        className="Frame36Mycontacts"
+        src={Frame36Mycontacts}
+        alt="Frame36Mycontacts"
+      ></img>
     </div>
   );
 }
 
 export default LeftSide;
 
-export { LeftSideHandle, LeftSideHandle2 };
+export { LeftSideHandle };

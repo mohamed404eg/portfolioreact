@@ -15,10 +15,13 @@ function AboutMe() {
         Rectangle3.current.getBoundingClientRect().height
     );
     // Left Side Handle
-    LeftSideHandle(
-      "LeftSideDiv-Rectangle-1",
-      Rectangle3.current.getBoundingClientRect().top + Rectangle3.current.getBoundingClientRect().height
-    );
+
+    setTimeout(() => {
+      LeftSideHandle(
+        "LeftSideDiv-Rectangle-1",
+        Rectangle3.current.getBoundingClientRect().top 
+      );
+    }, 200);
   }, []);
   // Rectangle-3 \\
 
