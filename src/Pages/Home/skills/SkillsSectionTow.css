@@ -109,3 +109,54 @@
 
   color: var(--gray);
 }
+
+
+@media screen and (max-width: 480px ) { 
+  .SkillsSectionTow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 16px;
+  }
+  
+
+  
+  .SkillsSectionTow-Languages {
+    display: inline;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .SkillsSectionTow-Databases {
+    display: inline;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .SkillsSectionTow-Other {
+    display: inline;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 6;
+  }
+  .SkillsSectionTow-Tools {
+  
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  
+  .SkillsSectionTow-Frameworks {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:4;
+    grid-row-end: 9;
+  }
+}

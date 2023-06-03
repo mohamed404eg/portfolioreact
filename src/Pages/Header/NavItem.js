@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import NavItemCSS from "./NavItem.css";
 export function NavItem(props) {
@@ -19,7 +19,7 @@ export function NavItem(props) {
       e.classList.remove("NavItemTitleACTIVE");
     });
 
-  // check if Element === hash
+    // check if Element === hash
     if (event.target.classList.contains("NavItemHash")) {
       console.log(event.target.nextSibling);
       event.target.nextSibling.classList.add("NavItemTitleACTIVE");
@@ -27,11 +27,30 @@ export function NavItem(props) {
       event.target.classList.add("NavItemTitleACTIVE");
     }
 
+    // go to section
+
+    if (window.location.pathname === "/Projects") {
+      window.scrollTo({
+        top: document.querySelector("#Projects").getBoundingClientRect().top,
+        left: 0,
+        behavior: "smooth",
+      });
+    }
   }
 
+  useEffect(() => {
+    // go to section
+    if (window.location.pathname === "/Projects") {
+      window.scrollTo({
+        top: document.querySelector("#Projects").getBoundingClientRect().top,
+        left: 0,
+        behavior: "smooth",
+      });
+    }
+  }, []);
   return (
     <div className="NavItem" onClick={handleClick}>
-      <Link className="NavItemA" to={"./" + props.href}>
+      <Link className="NavItemA" to={props.href}>
         <span className="NavItemHash">#</span>
         <span className={a}>{props.children}</span>
       </Link>

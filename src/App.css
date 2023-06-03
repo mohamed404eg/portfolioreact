@@ -43,6 +43,10 @@ body {
   border: 0;
 }
 
+#root {
+  background-color: var(--primary-background-color);
+  scroll-behavior: smooth;
+}
 .portFolio {
   display: flex;
   justify-content: space-between;

@@ -7,11 +7,12 @@ import Projects from "./projects/Projects";
 import Skills from "./skills/Skills";
 import AboutMe from "./aboutMe/AboutMe";
 import Mycontact from "./contact/Mycontact";
+import MyFooter from "../Footer/MyFooter";
 
 function Home() {
   return (
     <div className="HomeBody">
-      <MyHeader></MyHeader>
+      
       <First></First>
       <Quote></Quote>
       <Projects />

@@ -1,0 +1,33 @@
+.MyFooterTOP {
+  border-top: 1px solid var(--gray);
+  background-color: var(--primary-background-color);
+}
+.MyFooter {
+  width: calc(100% - 20px);
+  height: 100%;
+  max-width: 1024px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top:    32px;
+  margin-bottom: 48px;
+  background-color: var(--primary-background-color);
+}
+
+.Copyright {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--gray);
+  padding-bottom:    32px;
+  text-align: center;
+}
+.Copyright a{
+color: var(--white);
+}
+

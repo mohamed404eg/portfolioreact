@@ -14,22 +14,22 @@ function Mycontact() {
     setTimeout(() => {
       LeftSideHandle(
         "LeftSideDiv-Rectangle-2",
-        top.bottom + top.height * 2 + 40
+        top.bottom + (top.height  /2)
       );
-    }, 200);
+    }, 300);
 
     // LeftSideDiv-Rectangle-2  === Mycontact \\
   }, []);
 
   return (
-    <div className="Mycontact">
+    <div className="Mycontact" ref={MycontactTopRef}>
       <div className="MycontactTitle">
         <span className="MycontactTitleHash">#</span>
         <h3>Mycontact</h3> <span className="MycontactTitleLine"></span>
       </div>
 
       <div className="MycontactContent">
-        <div className="MycontactContentText" ref={MycontactTopRef}>
+        <div className="MycontactContentText" >
           <p>
             I’m interested in freelance opportunities. However, if you have
             other request or question, don’t hesitate to contact me

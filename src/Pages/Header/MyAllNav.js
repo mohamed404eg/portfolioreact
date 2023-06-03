@@ -11,7 +11,7 @@ let data = [
   {
     id: 2,
     title: "works",
-    href: "works",
+    href: "Projects",
   },
   {
     id: 3,

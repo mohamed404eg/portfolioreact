@@ -1,0 +1,56 @@
+.MyFooterRight {
+  flex-basis: 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+
+.MyFooterRight {
+float: right;
+}
+.MyFooterRight span {
+   
+    
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    margin-right: 32px;
+
+
+
+color: var(--white);
+text-align: left ;
+}
+
+@media screen and (max-width: 480px ) { 
+  .MyFooterRight {
+    flex-basis: 100%;
+    max-width: 100%;
+  display: flex;
+  justify-content: center;
+  }
+
+  .MyFooterRight span {
+   
+    margin-right: auto;
+    margin-left: auto;
+
+text-align: center ;
+margin-bottom: 5px;
+margin-top: 10px;
+
+}
+  .MyFooterRightMedia {
+    margin: 0 auto;
+  }
+  .Copyright {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}

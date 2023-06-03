@@ -49,6 +49,11 @@
   flex: none;
   order: 0;
   flex-grow: 0;
+  transition: ease 400ms;
+}
+.LogoImgText:hover > .LogoSvg
+{
+  transform: rotate(360deg);
 }
 
 /* menu */

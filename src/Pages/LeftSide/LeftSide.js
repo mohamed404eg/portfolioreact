@@ -6,6 +6,7 @@ import { ReactComponent as Dribble } from "../../assets/NavMobile/img/Dribble.sv
 import { ReactComponent as Figma } from "../../assets/NavMobile/img/Figma.svg";
 import { useRef, useState } from "react";
 import Frame36Mycontacts from "../../assets/Home/Frame 36 Mycontacts.svg";
+import { Route, Routes } from "react-router-dom";
 
 let LeftSideHandle;
 
@@ -18,39 +19,84 @@ function LeftSide() {
       setRectangle1Top((e) => (e = top));
     }
     if (name === "LeftSideDiv-Rectangle-2") {
-      setRectangle2Top((e) => (e = top));
+      setTimeout(() => {
+        setRectangle2Top(top);
+      }, 300);
     }
   };
 
   let Rectangle_1 = useRef();
   let Rectangle_2 = useRef();
 
+
+
   return (
-    <div className="LeftSideDiv">
-      <span className="LeftSideDiv-Line"></span>
+    <>
+      <Routes>
+        <Route
+         path={"/"}
+          element={
+            <div className="LeftSideDiv">
+              <span className="LeftSideDiv-Line"></span>
 
-      <div className="LeftSideDiv-media">
-        <Vector />
-        <Dribble />
-        <Figma />
-      </div>
+              <div className="LeftSideDiv-media">
+                <Vector />
+                <Dribble />
+                <Figma />
+              </div>
 
-      <span
-        ref={Rectangle_1}
-        style={{ top: Rectangle1Top + "px" }}
-        className="LeftSideDiv-Rectangle-1"
-      ></span>
+              <span
+                ref={Rectangle_1}
+                style={{ top: Rectangle1Top + "px" }}
+                className="LeftSideDiv-Rectangle-1"
+              ></span>
 
-      <img
-        ref={Rectangle_2}
-        style={{ top: Rectangle2Top + "px" }}
-        className="Frame36Mycontacts"
-        src={Frame36Mycontacts}
-        alt="Frame36Mycontacts"
-      ></img>
-    </div>
+              <img
+                ref={Rectangle_2}
+                style={{ top: Rectangle2Top + "px" }}
+                className="Frame36Mycontacts"
+                src={Frame36Mycontacts}
+                alt="Frame36Mycontacts"
+              ></img>
+            </div>
+          }
+        />
+    
+      <Route
+         path={"/Projects"}
+          element={
+            <div className="LeftSideDiv">
+              <span className="LeftSideDiv-Line"></span>
+
+              <div className="LeftSideDiv-media">
+                <Vector />
+                <Dribble />
+                <Figma />
+              </div>
+
+              <span
+                ref={Rectangle_1}
+                style={{ top: Rectangle1Top + "px" }}
+                className="LeftSideDiv-Rectangle-1"
+              ></span>
+
+              <img
+                ref={Rectangle_2}
+                style={{ top: Rectangle2Top + "px" }}
+                className="Frame36Mycontacts"
+                src={Frame36Mycontacts}
+                alt="Frame36Mycontacts"
+              ></img>
+            </div>
+          }
+        />
+      </Routes>
+    </>
   );
 }
+
+
+
 
 export default LeftSide;
 

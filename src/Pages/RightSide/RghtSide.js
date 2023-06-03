@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import RightSideCss from "./RightSide.css";
 import Rectangle3Img from "./../../assets/Home/Frame31-AboutMeTitle-Right.svg";
+import { Route, Routes } from "react-router-dom";
 // svg
 
 let RightSideHandle;
@@ -25,23 +26,52 @@ function RightSide() {
   // console.log("1");
 
   return (
-    <div className="RightSideDiv">
-      <span
-        style={{ top: Rectangle1Top + "px" }}
-        className="RightSideDiv-Rectangle-1"
-      ></span>
-      <span
-        style={{ top: Rectangle2Top + "px" }}
-        className="RightSideDiv-Rectangle-2"
-      ></span>
+    <Routes>
+      <Route
+        path={"/"}
+        element={
+          <div className="RightSideDiv">
+            <span
+              style={{ top: Rectangle1Top + "px" }}
+              className="RightSideDiv-Rectangle-1"
+            ></span>
+            <span
+              style={{ top: Rectangle2Top + "px" }}
+              className="RightSideDiv-Rectangle-2"
+            ></span>
 
-      <span
-        style={{ top: Rectangle3Top + "px" }}
-        className="RightSideDiv-Rectangle-3"
-      >
-        <img src={Rectangle3Img} alt="Rectangle3"></img>
-      </span>
-    </div>
+            <span
+              style={{ top: Rectangle3Top + "px" }}
+              className="RightSideDiv-Rectangle-3"
+            >
+              <img src={Rectangle3Img} alt="Rectangle3"></img>
+            </span>
+          </div>
+        }
+      ></Route>
+      <Route
+        path={"/Projects"}
+        element={
+          <div className="RightSideDiv">
+            <span
+              style={{ top: Rectangle1Top + "px" }}
+              className="RightSideDiv-Rectangle-1"
+            ></span>
+            <span
+              style={{ top: Rectangle2Top + "px" }}
+              className="RightSideDiv-Rectangle-2"
+            ></span>
+
+            <span
+              style={{ top: Rectangle3Top + "px" }}
+              className="RightSideDiv-Rectangle-3"
+            >
+              <img src={Rectangle3Img} alt="Rectangle3"></img>
+            </span>
+          </div>
+        }
+      ></Route>
+    </Routes>
   );
 }
 

@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useRef } from "react";
 import { RightSideHandle } from "../../RightSide/RghtSide";
 import ProjectsCss from "./Projects.css";
 import ProjectsTow from "./ProjectsTow";
+import { Link } from "react-router-dom";
 
 function Projects() {
   // Rectangle-2 == ProjectsTow
@@ -11,18 +12,22 @@ function Projects() {
   }, []);
   // Rectangle-2 \\
   return (
-    <div className="ProjectsDiv">
+    <div className="ProjectsDiv" id="Projects">
       <div className="ProjectsOne">
         <div className="ProjectsOneDiv">
           {" "}
           <div className="ProjectsOneDivElements">
             <span className="ProjectsOneDivHash">#</span>
-            <h2>Projects</h2>
+            <h2 >Projects</h2>
             <span className="ProjectsOneDivLine"></span>
           </div>
           <div className="ProjectsOneDivTow">
             <span>
-              {"  More"} <span>{"~>"}</span>
+             <Link to={"/PageProjects"}>
+             {"  More"} <span>{"~>"}</span>
+             
+             </Link> 
+             
             </span>
           </div>
         </div>
