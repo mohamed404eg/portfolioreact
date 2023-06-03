@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import RightSideCss from "./RightSide.css";
-import Rectangle3Img from "../../../assets/Home/Frame31-AboutMeTitle-Right.svg";
+import Rectangle3Img from "./../../assets/Home/Frame31-AboutMeTitle-Right.svg";
 // svg
 
 let RightSideHandle;

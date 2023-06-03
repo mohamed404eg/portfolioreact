@@ -3,7 +3,7 @@ import Image from "../../../assets/Home/Image-1.png";
 import Frame29 from "../../../assets/Home/Frame 29.svg";
 import Frame30 from "../../../assets/Home/Frame 30.svg";
 import { useEffect, useRef } from "react";
-import { RightSideHandle } from "../../RightSide/LeftSide/RghtSide";
+import { RightSideHandle } from "../../RightSide/RghtSide";
 
 function AboutMeContentTow() {
 

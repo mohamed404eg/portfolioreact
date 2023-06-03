@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./Pages/Home/MyHome";
 import { BrowserRouter } from "react-router-dom";
 import LeftSide from "./Pages/LeftSide/LeftSide";
-import RightSide from "./Pages/RightSide/LeftSide/RghtSide";
+import RightSide from "./Pages/RightSide/RghtSide";
 
 function App() {
   return (

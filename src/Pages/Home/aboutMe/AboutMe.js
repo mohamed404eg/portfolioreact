@@ -2,7 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import AboutMeCss from "./AboutMe.css";
 import AboutMeContentOne from "./AboutMeContentOne";
 import AboutMeContentTow from "./AboutMeContentTow";
-import { RightSideHandle } from "../../RightSide/LeftSide/RghtSide";
+import { RightSideHandle } from "../../RightSide/RghtSide";
 import { LeftSideHandle, LeftSideHandle2 } from "../../LeftSide/LeftSide";
 
 function AboutMe() {
@@ -23,7 +23,7 @@ function AboutMe() {
   // Rectangle-3 \\
 
   return (
-    <div>
+    <div className="AboutMe">
       <div className="AboutMeTitle">
         {" "}
         <span className="AboutMeTitleHash">#</span> <h3>about-me</h3>{" "}

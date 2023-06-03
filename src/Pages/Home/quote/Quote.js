@@ -2,7 +2,7 @@ import QuoteCss from "./Quote.css";
 import { ReactComponent as DoubleQuotationRight } from "../../../assets/Home/Double-Quotation-right.svg";
 import { useEffect, useLayoutEffect, useState } from "react";
 import { useRef } from "react";
-import { RightSideHandle } from "../../RightSide/LeftSide/RghtSide";
+import { RightSideHandle } from "../../RightSide/RghtSide";
 
 function Quote() {
   const QuoteOneTopRef = useRef();

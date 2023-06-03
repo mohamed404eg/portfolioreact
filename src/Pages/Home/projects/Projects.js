@@ -1,5 +1,5 @@
 import { useEffect, useLayoutEffect, useRef } from "react";
-import { RightSideHandle } from "../../RightSide/LeftSide/RghtSide";
+import { RightSideHandle } from "../../RightSide/RghtSide";
 import ProjectsCss from "./Projects.css";
 import ProjectsTow from "./ProjectsTow";
 
