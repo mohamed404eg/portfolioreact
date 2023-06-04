@@ -7,6 +7,8 @@ import RightSide from "./Pages/RightSide/RghtSide";
 import MyFooter from "./Pages/Footer/MyFooter";
 import PageProjects from "./Pages/PageProjects/PageProjects";
 import MyHeader from "./Pages/Header/MyHeader";
+import PageAbout from "./Pages/PageAbout/PageAbout";
+import PageContacts from "./Pages/PageContacts/PageContacts";
 
 function App() {
   return (
@@ -33,6 +35,22 @@ function App() {
               element={
                 <>
                   <Home />{" "}
+                </>
+              }
+            />
+            <Route
+              path="about-me"
+              element={
+                <>
+                  <PageAbout />{" "}
+                </>
+              }
+            />
+            <Route
+              path="contacts"
+              element={
+                <>
+                  <PageContacts />{" "}
                 </>
               }
             />

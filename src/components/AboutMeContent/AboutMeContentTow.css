@@ -46,10 +46,40 @@
   right: 16px;
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 768px) {
   .AboutMeContentTow {
     position: relative;
     flex-basis: 100%;
     max-width: 100%;
+  }
+  .AboutMeContentTow-image0 {
+    width: 100%;
+    max-width: 319px;
+    top: -10;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .AboutMeContentTow-image0 {
+    width: 100%;
+    max-width: 319px;
+    top: 0;
+  }
+  .AboutMeContentTow-image0Div::after {
+    content: " ";
+    position: absolute;
+    bottom: 0px;
+    height: 1px;
+    width: 80%;
+    margin-left: 20px;
+    border-bottom: 1px solid magenta;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .AboutMeContentTow-image0 {
+    width: 100%;
+    max-width: 319px;
+    top: 0;
   }
 }

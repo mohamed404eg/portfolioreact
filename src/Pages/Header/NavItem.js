@@ -1,6 +1,7 @@
 import React, { Component, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import NavItemCSS from "./NavItem.css";
+
 export function NavItem(props) {
   let a = "NavItemTitle";
   if (window.location.pathname === "/" + props.href) {
@@ -8,6 +9,19 @@ export function NavItem(props) {
   } else if (props.id === 1 && window.location.pathname === "") {
     a = "NavItemTitleACTIVE";
   }
+
+  let [Mylocation, setMyLocation] = useState(window.location.pathname);
+
+  useEffect(() => {
+    setInterval(() => {
+      setMyLocation(window.location.pathname);
+    }, 50);
+
+    handleClick(null);
+    document.querySelector("a").addEventListener("click", () => {
+      handleClick(null);
+    });
+  }, [Mylocation]);
 
   function handleClick(event) {
     let item = document.querySelectorAll(".NavItemTitleACTIVE");
@@ -20,10 +34,12 @@ export function NavItem(props) {
     });
 
     // check if Element === hash
-    if (event.target.classList.contains("NavItemHash")) {
-      event.target.nextSibling.classList.add("NavItemTitleACTIVE");
-    } else {
-      event.target.classList.add("NavItemTitleACTIVE");
+    if (event) {
+      if (event.target.classList.contains("NavItemHash")) {
+        event.target.nextSibling.classList.add("NavItemTitleACTIVE");
+      } else {
+        event.target.classList.add("NavItemTitleACTIVE");
+      }
     }
 
     // go to section
@@ -36,6 +52,12 @@ export function NavItem(props) {
           behavior: "smooth",
         });
       }
+    }
+
+    // Home
+    if (window.location.pathname === "/") {
+      let itemhOME = document.querySelectorAll(".NavItemTitle");
+      let add = (itemhOME[0].className = "NavItemTitleACTIVE");
     }
   }
 

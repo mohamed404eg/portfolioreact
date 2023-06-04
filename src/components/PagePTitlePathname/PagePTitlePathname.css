@@ -1,0 +1,31 @@
+.PageProjectsPTitlePathname {
+    font-family: "Fira Code";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    margin-top: 53px;
+    margin-bottom: 68px;
+  }
+  
+  .PageProjectsPTitlePathname-P1 {
+    margin: 0;
+  }
+  .PageProjectsPTitlePathname-P1 span:first-child {
+    color: var(--primary);
+  }
+  .PageProjectsPTitlePathname-P1 span:last-child {
+    color: var(--white);
+  }
+  
+  .PageProjectsPTitlePathname-P2 {
+    font-family: "Fira Code";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+  
+    color: var(--white);
+    margin: 0;
+  }
+  

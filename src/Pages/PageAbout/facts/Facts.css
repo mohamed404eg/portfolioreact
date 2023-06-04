@@ -1,0 +1,65 @@
+.FactsSection {
+  display: flex;
+}
+.FactsSectionOne {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+  flex-wrap: wrap;
+  flex-basis: 70%;
+  max-width: 70%;
+}
+.FactsSectionTow {
+  flex-basis: 30%;
+  max-width: 30%;
+}
+.FactsSection-P {
+  padding: 8px;
+  margin: 16px;
+  border: 1px solid var(--gray);
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: var(--gray);
+}
+
+.FactsSection-P span {
+  color: var(--white);
+}
+
+/* FactsSectionTow */
+
+.FactsSectionTow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.FactsSectionTow img:first-child {
+  width: 64px;
+  height: 64px;
+  margin-right: 113px;
+}
+.FactsSectionTow img:last-child {
+  width: 113px;
+  height: 113px;
+}
+
+@media screen and (max-width: 768px) {
+  .FactsSection {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .FactsSectionOne {
+  
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .FactsSectionTow {
+    align-items: center;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}

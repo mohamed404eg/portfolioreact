@@ -5,16 +5,23 @@ import { ReactComponent as Vector } from "../../assets/NavMobile/img/Vector.svg"
 import { ReactComponent as Dribble } from "../../assets/NavMobile/img/Dribble.svg";
 import { ReactComponent as Figma } from "../../assets/NavMobile/img/Figma.svg";
 import { useRef, useState } from "react";
-import Frame36Mycontacts from "../../assets/Home/Frame 36 Mycontacts.svg";
+
 import { Route, Routes } from "react-router-dom";
+import LeftSideDivHome from "./LeftSideDivHome";
+import LeftSideAboutMeContent from "./LeftSideAboutMeContent";
+import LeftSidePageContacts from "./LeftSidePageContacts";
 
 let LeftSideHandle;
 
 function LeftSide() {
   let [Rectangle1Top, setRectangle1Top] = useState("");
   let [Rectangle2Top, setRectangle2Top] = useState("");
+  let [LeftSideAboutMeContentState, setLeftSideAboutMeContentState] =
+    useState("");
+  let [LeftSidePageContactsState, setLeftSidePageContactsState] = useState("");
   LeftSideHandle = function LeftSideHandle(name, top) {
-    //console.log(name, top);
+    // console.log(name, top);
+
     if (name === "LeftSideDiv-Rectangle-1") {
       setRectangle1Top((e) => (e = top));
     }
@@ -23,10 +30,13 @@ function LeftSide() {
         setRectangle2Top(top);
       }, 300);
     }
+    if (name === "LeftSideAboutMeContent") {
+      setLeftSideAboutMeContentState((e) => (e = top));
+    }
+    if (name === "LeftSidePageContacts") {
+      setLeftSidePageContactsState((e) => (e = top));
+    }
   };
-
-  let Rectangle_1 = useRef();
-  let Rectangle_2 = useRef();
 
   return (
     <>
@@ -38,51 +48,16 @@ function LeftSide() {
           <Figma />
         </div>
 
-        <Routes>
-          <Route
-            path={"/"}
-            element={
-              <>
-            
-
-                <span
-                  ref={Rectangle_1}
-                  style={{ top: Rectangle1Top + "px" }}
-                  className="LeftSideDiv-Rectangle-1"
-                ></span>
-
-                <img
-                  ref={Rectangle_2}
-                  style={{ top: Rectangle2Top + "px" }}
-                  className="Frame36Mycontacts"
-                  src={Frame36Mycontacts}
-                  alt="Frame36Mycontacts"
-                ></img>
-              </>
-            }
-          />
-
-          <Route
-            path={"/Projects"}
-            element={
-              <>
-                <span
-                  ref={Rectangle_1}
-                  style={{ top: Rectangle1Top + "px" }}
-                  className="LeftSideDiv-Rectangle-1"
-                ></span>
-
-                <img
-                  ref={Rectangle_2}
-                  style={{ top: Rectangle2Top + "px" }}
-                  className="Frame36Mycontacts"
-                  src={Frame36Mycontacts}
-                  alt="Frame36Mycontacts"
-                ></img>
-              </>
-            }
-          />
-        </Routes>
+        <LeftSideDivHome
+          Rectangle1Top={Rectangle1Top}
+          Rectangle2Top={Rectangle2Top}
+        />
+        <LeftSideAboutMeContent
+          LeftSideAboutMeContentState={LeftSideAboutMeContentState}
+        />
+        <LeftSidePageContacts
+          LeftSidePageContactsState={LeftSidePageContactsState}
+        />
       </div>
     </>
   );

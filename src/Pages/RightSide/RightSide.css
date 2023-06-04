@@ -46,6 +46,36 @@
   /* gray */
 }
 
+/* RightSideAboutMeContent */
+.RightSideAboutMeContent {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 155px;
+  height: 155px;
+
+  border: 1px solid var(--gray);
+}
+.RightSideAboutMeContentSkillsSvg {
+  position: absolute;
+  right: -2px;
+}
+/* RightSidePageContacts */
+.RightSidePageContacts {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 155px;
+  height: 155px;
+
+  border: 1px solid var(--gray);
+}
+
+/* LeftSidePageContacts */
+.LeftSidePageContacts {
+  position: absolute;
+  left: -31px;
+}
 @media screen and (max-width: 630px) {
   .LeftSideDiv {
     display: none;

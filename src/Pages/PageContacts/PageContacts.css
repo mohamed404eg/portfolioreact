@@ -1,0 +1,31 @@
+.PageContacts {
+ 
+    height: 100svh;   
+}
+
+.all-media {
+    margin-top: 22px;
+}
+.PageContacts-Twitter {
+    display: flex;
+    align-items: center;
+}
+.PageContacts-Twitter span {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    
+    /* gray */
+    
+    color: var(--gray);
+}
+
+.all-media img {
+    width: 32px;
+    height: 32px;
+    padding: 3px;
+}

@@ -7,13 +7,13 @@
 
 .LogoImgText {
   height: 21px;
-  width: 72px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  column-gap: 8px;
 }
 
 .LogoText {
-  width: 48px;
   height: 21px;
 
   font-family: "Fira Code";

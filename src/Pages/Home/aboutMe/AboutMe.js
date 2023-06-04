@@ -1,13 +1,10 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import AboutMeCss from "./AboutMe.css";
-import AboutMeContentOne from "./AboutMeContentOne";
-import AboutMeContentTow from "./AboutMeContentTow";
+import AboutMeContentOne from "../../../components/AboutMeContent/AboutMeContentOne";
+import AboutMeContentTow from "../../../components/AboutMeContent/AboutMeContentTow";
 import { RightSideHandle } from "../../RightSide/RghtSide";
 
-
 function AboutMe() {
-
-
   return (
     <div className="AboutMe">
       <div className="AboutMeTitle">
@@ -16,7 +13,7 @@ function AboutMe() {
         <span className="AboutMeTitleLine"></span>
       </div>
 
-      <div className="AboutMeContent" >
+      <div className="AboutMeContent">
         <AboutMeContentOne />
         <AboutMeContentTow />
       </div>

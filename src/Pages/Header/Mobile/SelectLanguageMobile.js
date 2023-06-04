@@ -6,14 +6,12 @@ export default function SelectLanguage() {
   let GroupBtnRef = useRef();
   let arrowRef = useRef();
   const handleLanguageArrowFocus = () => {
-    console.log("handleLanguageArrowFocus");
     GroupBtnRef.current.classList.toggle("SelectLanguageStyleAppearMobile");
     // arrow
     arrowRef.current.classList.toggle("arrowDeg180");
     // arrow \\
   };
   const handleLanguageArrowBlur = () => {
-    console.log("handleLanguageArrowBlur");
     setTimeout(() => {
       GroupBtnRef.current.classList.toggle("SelectLanguageStyleAppearMobile");
     }, 90);

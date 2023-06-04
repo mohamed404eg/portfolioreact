@@ -1,0 +1,148 @@
+.BodyContact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 88px;
+}
+
+.BodyContactOne {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+.BodyContactTow {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+/* BodyContactOne */
+
+.BodyContactOne p {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: var(--gray);
+  padding-right: 10px;
+}
+/* BodyContactTow */
+.BodyContactTow {
+  display: flex;
+  justify-content: right;
+  column-gap: 11px;
+}
+/* BodyContactTow-Support */
+.BodyContactTow-Support {
+  padding: 16px;
+
+  border: 1px solid var(--gray);
+  height: 82px;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+.BodyContactTow div:first-child p:first-child {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: var(--white);
+}
+.BodyContactTow div:first-child p:last-child {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: var(--gray);
+}
+
+.BodyContactMedia {
+  flex-basis: 50%;
+  max-width: 50%;
+  max-height: 141px;
+}
+
+.BodyContactMedia {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 16px;
+
+  max-width: 204px;
+  max-height: 141px;
+
+  border: 1px solid var(--gray);
+}
+
+.BodyContactMedia h6 {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--white);
+  margin: 0;
+}
+
+.BodyContactMedia-Collation-media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+
+.BodyContactMedia-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+}
+
+.BodyContactMedia-media img {
+  width: 32px;
+  height: 32px;
+}
+.BodyContactMedia-media span {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--gray);
+}
+
+@media screen and (max-width: 992px) {
+  .BodyContactTow {
+    display: flex;
+    justify-content: center;
+    column-gap: 11px;
+    row-gap: 11px;
+    flex-wrap: wrap;
+  }
+  .BodyContactTow-Support {
+    max-width: 69%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .BodyContact {
+    display: flex;
+    flex-direction: column;
+  }
+  .BodyContactOne {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .BodyContactTow {
+    flex-basis: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+}

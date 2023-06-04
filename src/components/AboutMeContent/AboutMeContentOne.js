@@ -1,8 +1,8 @@
 import AboutMeContentOneCss from "./AboutMeContentOne.css";
-import { LeftSideHandle, LeftSideHandle2 } from "../../LeftSide/LeftSide";
-import GetCoords from "../../../hooks/GetCoords";
+import { LeftSideHandle, LeftSideHandle2 } from "../../Pages/LeftSide/LeftSide";
+import GetCoords from "../../hooks/GetCoords";
 import { useEffect, useRef } from "react";
-function AboutMeContentOne() {
+function AboutMeContentOne({ btn }) {
   // Rectangle-3 == ProjectsTow
   const Rectangle3 = useRef();
   useEffect(() => {
@@ -16,6 +16,20 @@ function AboutMeContentOne() {
       LeftSideHandle(
         "LeftSideDiv-Rectangle-1",
         GetCoords(Rectangle3.current).top + 20
+      );
+    });
+
+    setTimeout(() => {
+      LeftSideHandle(
+        "LeftSideAboutMeContent",
+        GetCoords(Rectangle3.current).top + 50
+      );
+    }, 200);
+
+    window.addEventListener("resize", () => {
+      LeftSideHandle(
+        "LeftSideAboutMeContent",
+        GetCoords(Rectangle3.current).top + 50
       );
     });
   }, []);
@@ -38,7 +52,7 @@ function AboutMeContentOne() {
           newest technologies and frameworks.
         </p>
       </div>
-      <button>{"Read more ->"}</button>
+      {btn ? <button>{"Read more ->"}</button> : " "}
     </div>
   );
 }

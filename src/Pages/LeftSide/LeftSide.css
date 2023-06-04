@@ -49,6 +49,13 @@
   top: 0;
 }
 
+.LeftSideAboutMeContent {
+  position: absolute;
+  width: 109px;
+  height: 49px;
+  left: -31px;
+}
+
 @media screen and (max-width: 1200px) {
   .LeftSideDiv-Rectangle-1 {
     position: absolute;

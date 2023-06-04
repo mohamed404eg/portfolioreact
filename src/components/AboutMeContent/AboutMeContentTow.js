@@ -1,27 +1,39 @@
 import AboutMeContentTowCss from "./AboutMeContentTow.css";
-import Image from "../../../assets/Home/Image-1.png";
-import Frame29 from "../../../assets/Home/Frame 29.svg";
-import Frame30 from "../../../assets/Home/Frame 30.svg";
+import Image from "../../assets/Home/Image-1.png";
+import Frame29 from "../../assets/Home/Frame 29.svg";
+import Frame30 from "../../assets/Home/Frame 30.svg";
 import { useEffect, useRef } from "react";
-import { RightSideHandle } from "../../RightSide/RghtSide";
-import GetCoords from "../../../hooks/GetCoords";
+import { RightSideHandle } from "../../Pages/RightSide/RghtSide";
+import GetCoords from "../../hooks/GetCoords";
 function AboutMeContentTow() {
   // Rectangle-3 == ProjectsTow
   const RightSideRectangle3 = useRef();
-  
-  
+
   useEffect(() => {
-      setTimeout(() => { 
+    setTimeout(() => {
       RightSideHandle(
         "RightSideDiv-Rectangle-3",
         GetCoords(RightSideRectangle3.current).top + 360
-        );
-      },200)
+      );
+    }, 200);
 
     window.addEventListener("resize", () => {
       RightSideHandle(
         "RightSideDiv-Rectangle-3",
         GetCoords(RightSideRectangle3.current).top + 360
+      );
+    });
+    setTimeout(() => {
+      RightSideHandle(
+        "RightSideAboutMeContent",
+        GetCoords(RightSideRectangle3.current).top + 50
+      );
+    }, 200);
+
+    window.addEventListener("resize", () => {
+      RightSideHandle(
+        "RightSideAboutMeContent",
+        GetCoords(RightSideRectangle3.current).top + 50
       );
     });
   }, []);

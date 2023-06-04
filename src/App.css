@@ -56,6 +56,7 @@ body {
 .LeftSide {
   float: left;
   flex-basis: 5%;
+  transition: ease 400ms;
 }
 .container {
   flex-basis: 90%;
@@ -63,6 +64,7 @@ body {
 }
 .RightSide {
   flex-basis: 5%;
+  transition: ease 400ms;
 }
 
 .container1024 {
@@ -107,6 +109,7 @@ body {
   .LeftSide {
     float: left;
     flex-basis: 0;
+    display: none;
   }
   .container {
     flex-basis: calc(100% - 20px);
@@ -116,6 +119,7 @@ body {
   }
   .RightSide {
     flex-basis: 0;
+    display: none;
   }
 }
 
