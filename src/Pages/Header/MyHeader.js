@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 // css
@@ -10,19 +10,43 @@ import MyAllNavMobile from "./Mobile/MyAllNavMobile";
 
 import SelectLanguage from "./SelectLanguage";
 
-// export handle open 
-let toggleMenu
+// export handle open
+let toggleMenu;
 
 function Header() {
+  let logo = useRef();
   const [menuOpen, SetMenuOpen] = useState(false);
 
-   toggleMenu = () => {
+  toggleMenu = () => {
     SetMenuOpen(!menuOpen);
   };
 
+
+  // on on Click logo than rest navBar
+  useEffect(() => {
+    logo.current.addEventListener("click", () => {
+      // Home
+      setTimeout(() => {
+        if (window.location.pathname === "/") {
+          let item = document.querySelectorAll(".NavItemTitleACTIVE");
+
+          item.forEach((e) => {
+            if (e.classList.contains("NavItemTitleACTIVE")) {
+              e.classList.add("NavItemTitle");
+            }
+            e.classList.remove("NavItemTitleACTIVE");
+          });
+
+          let itemhOME = document.querySelectorAll(".NavItemTitle");
+          let add = (itemhOME[0].className = "NavItemTitleACTIVE");
+        }
+      }, 100);
+    });
+  }, []);
+
   return (
     <header className="MyHeader">
-      <div className="LogoImgText">
+      <div className="LogoImgText" ref={logo}>
         <Link to={"./"} className="LogoSvg">
           <svg
             width="16"
@@ -58,4 +82,4 @@ function Header() {
 }
 
 export default Header;
-export {toggleMenu}
+export { toggleMenu };

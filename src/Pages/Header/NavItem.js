@@ -10,18 +10,7 @@ export function NavItem(props) {
     a = "NavItemTitleACTIVE";
   }
 
-  let [Mylocation, setMyLocation] = useState(window.location.pathname);
 
-  useEffect(() => {
-    setInterval(() => {
-      setMyLocation(window.location.pathname);
-    }, 50);
-
-    handleClick(null);
-    document.querySelector("a").addEventListener("click", () => {
-      handleClick(null);
-    });
-  }, [Mylocation]);
 
   function handleClick(event) {
     let item = document.querySelectorAll(".NavItemTitleACTIVE");
@@ -54,11 +43,7 @@ export function NavItem(props) {
       }
     }
 
-    // Home
-    if (window.location.pathname === "/") {
-      let itemhOME = document.querySelectorAll(".NavItemTitle");
-      let add = (itemhOME[0].className = "NavItemTitleACTIVE");
-    }
+ 
   }
 
   useEffect(() => {

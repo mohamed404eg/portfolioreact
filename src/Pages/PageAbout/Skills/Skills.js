@@ -22,15 +22,15 @@ function Skills() {
   // RightSideAboutMeContentSkills \\
 
   return (
-    <div className="SkillsDiv">
-      <div className="SkillsOne" ref={SkillsH3}>
+    <div className="PageAboutSkillsDiv">
+      <div className="PageAboutSkillsOne" ref={SkillsH3}>
         {" "}
-        <span className="SkillsOneHash">#</span> <h3>Skills</h3>{" "}
-        <span className="SkillsOneLine"></span>
+        <span className="PageAboutSkillsOneHash">#</span> <h3>Skills</h3>{" "}
+        <span className="PageAboutSkillsOneLine"></span>
       </div>
 
-      <div className="SkillsTow">
-        <div className="SkillsTow-child-2">
+      <div className="PageAboutSkillsTow">
+        <div className="PageAboutSkillsTow-child-2">
           {" "}
           <SkillsSectionTow></SkillsSectionTow>
         </div>

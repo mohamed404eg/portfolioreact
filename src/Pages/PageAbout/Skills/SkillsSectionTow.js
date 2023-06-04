@@ -2,8 +2,8 @@ import SkillsSectionTowCss from "./SkillsSectionTow.css";
 import SkillsSectionTowTag from "./SkillsSectionTowTag";
 function SkillsSectionTow() {
   return (
-    <div className="SkillsSectionTow">
-      <div className="SkillsSectionTow-Languages">
+    <div className="PageAboutSkillsSectionTow">
+      <div className="PageAboutSkillsSectionTow-Languages">
         {/* tag */}
         <SkillsSectionTowTag h5="Languages">
           <span>HTML</span> <span>CSS</span>
@@ -12,7 +12,7 @@ function SkillsSectionTow() {
         {/* ==tag== */}
       </div>
 
-      <div className="SkillsSectionTow-Other">
+      <div className="PageAboutSkillsSectionTow-Other">
         {/* tag */}
         <SkillsSectionTowTag h5="Other">
           <span>MUI</span>
@@ -22,7 +22,7 @@ function SkillsSectionTow() {
         </SkillsSectionTowTag>
         {/* ==tag== */}
       </div>
-      <div className="SkillsSectionTow-Tools">
+      <div className="PageAboutSkillsSectionTow-Tools">
         {/* tag */}
         <SkillsSectionTowTag h5="Tools">
           <span>VSCode</span>
@@ -33,13 +33,13 @@ function SkillsSectionTow() {
         </SkillsSectionTowTag>
         {/* ==tag== */}
       </div>
-      <div className="SkillsSectionTow-Frameworks">  {/* tag */}
+      <div className="PageAboutSkillsSectionTow-Frameworks">  {/* tag */}
         <SkillsSectionTowTag h5="Frameworks">
           <span>React</span>
         </SkillsSectionTowTag>
         {/* ==tag== */}</div>
         
-      <div className="SkillsSectionTow-Databases">
+      <div className="PageAboutSkillsSectionTow-Databases">
         {/* tag */}
         <SkillsSectionTowTag h5="Databases">
           <span>very soon</span>

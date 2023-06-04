@@ -1,4 +1,4 @@
-.SkillsSectionTow {
+.PageAboutSkillsSectionTow {
   position: relative;
   width: 100%;
   height: 100%;
@@ -9,25 +9,25 @@
   flex-wrap: wrap;
 }
 
-.SkillsSectionTow-Languages {
+.PageAboutSkillsSectionTow-Languages {
   max-width: 192px;
 }
-.SkillsSectionTow-Databases {
+.PageAboutSkillsSectionTow-Databases {
   max-width: 192px;
 }
-.SkillsSectionTow-Other {
+.PageAboutSkillsSectionTow-Other {
   max-width: 192px;
 }
-.SkillsSectionTow-Tools {
+.PageAboutSkillsSectionTow-Tools {
   max-width: 192px;
 }
 
-.SkillsSectionTow-Frameworks {
+.PageAboutSkillsSectionTow-Frameworks {
   max-width: 192px;
 }
 
 /* SkillsSectionTow all  */
-.SkillsSectionTowDivJSX {
+.PageAboutSkillsSectionTowDivJSX {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@
   overflow: hidden;
   box-sizing: border-box;
 }
-.SkillsSectionTow-tag-h5 {
+.PageAboutSkillsSectionTow-tag-h5 {
   display: block;
   width: 100%;
   font-family: "Fira Code";
@@ -55,7 +55,7 @@
   padding-left: 8px;
 }
 
-.SkillsSectionTow-tag-div {
+.PageAboutSkillsSectionTow-tag-div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -64,7 +64,7 @@
 }
 
 /* div span */
-.SkillsSectionTow-tag-2 {
+.PageAboutSkillsSectionTow-tag-2 {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -74,7 +74,7 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
-.SkillsSectionTow-tag-2 span {
+.PageAboutSkillsSectionTow-tag-2 span {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
