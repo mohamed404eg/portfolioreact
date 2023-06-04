@@ -1,7 +1,8 @@
 import { useRef, useState } from "react";
 import RightSideCss from "./RightSide.css";
-import Rectangle3Img from "./../../assets/Home/Frame31-AboutMeTitle-Right.svg";
+
 import { Route, Routes } from "react-router-dom";
+import RightSideDivHome from "./RightSideDivHome";
 // svg
 
 let RightSideHandle;
@@ -26,52 +27,15 @@ function RightSide() {
   // console.log("1");
 
   return (
-    <Routes>
-      <Route
-        path={"/"}
-        element={
-          <div className="RightSideDiv">
-            <span
-              style={{ top: Rectangle1Top + "px" }}
-              className="RightSideDiv-Rectangle-1"
-            ></span>
-            <span
-              style={{ top: Rectangle2Top + "px" }}
-              className="RightSideDiv-Rectangle-2"
-            ></span>
-
-            <span
-              style={{ top: Rectangle3Top + "px" }}
-              className="RightSideDiv-Rectangle-3"
-            >
-              <img src={Rectangle3Img} alt="Rectangle3"></img>
-            </span>
-          </div>
-        }
-      ></Route>
-      <Route
-        path={"/Projects"}
-        element={
-          <div className="RightSideDiv">
-            <span
-              style={{ top: Rectangle1Top + "px" }}
-              className="RightSideDiv-Rectangle-1"
-            ></span>
-            <span
-              style={{ top: Rectangle2Top + "px" }}
-              className="RightSideDiv-Rectangle-2"
-            ></span>
-
-            <span
-              style={{ top: Rectangle3Top + "px" }}
-              className="RightSideDiv-Rectangle-3"
-            >
-              <img src={Rectangle3Img} alt="Rectangle3"></img>
-            </span>
-          </div>
-        }
-      ></Route>
-    </Routes>
+    <>
+      <div className="RightSideDiv">
+        <RightSideDivHome
+          Rectangle1Top={Rectangle1Top}
+          Rectangle2Top={Rectangle2Top}
+          Rectangle3Top={Rectangle3Top}
+        />
+      </div>
+    </>
   );
 }
 

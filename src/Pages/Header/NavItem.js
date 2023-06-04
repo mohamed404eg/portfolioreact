@@ -21,7 +21,6 @@ export function NavItem(props) {
 
     // check if Element === hash
     if (event.target.classList.contains("NavItemHash")) {
-      console.log(event.target.nextSibling);
       event.target.nextSibling.classList.add("NavItemTitleACTIVE");
     } else {
       event.target.classList.add("NavItemTitleACTIVE");
@@ -29,12 +28,14 @@ export function NavItem(props) {
 
     // go to section
 
-    if (window.location.pathname === "/Projects") {
-      window.scrollTo({
-        top: document.querySelector("#Projects").getBoundingClientRect().top,
-        left: 0,
-        behavior: "smooth",
-      });
+    if (document.querySelector("#Projects")) {
+      if (window.location.pathname === "/Projects") {
+        window.scrollTo({
+          top: document.querySelector("#Projects").getBoundingClientRect().top,
+          left: 0,
+          behavior: "smooth",
+        });
+      }
     }
   }
 

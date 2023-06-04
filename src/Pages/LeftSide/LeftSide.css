@@ -49,6 +49,13 @@
   top: 0;
 }
 
+@media screen and (max-width: 1200px) {
+  .LeftSideDiv-Rectangle-1 {
+    position: absolute;
+    width: 100px;
+  }
+}
+
 @media screen and (max-width: 630px) {
   .LeftSideDiv {
     display: none;

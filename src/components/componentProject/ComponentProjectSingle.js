@@ -1,30 +1,8 @@
-import ProjectsTowCss from "./ProjectsTow.css";
-import ProjectCss from "./Project.css";
-import Rectangle22 from "../../../assets/Home/Rectangle 22.jpg";
 import { Link } from "react-router-dom";
-import ProjectJson from "../../../data/Projects.json";
+import Rectangle22 from "../../assets/Home/Rectangle 22.jpg";
+import ComponentProjectSingleCss from "./ComponentProjectSingle.css";
 
-function ProjectsTow() {
-  let ProjectMap = ProjectJson.map((project) => {
-    return (
-      <Project
-        key={project.id}
-        src={project.src}
-        tag={project.tag}
-        title={project.title}
-        description={project.description}
-        btnTitle={project.btnTitle}
-        btnTitleHref={project.btnTitleHref}
-        btnTitle2={project.btnTitle2}
-        btnTitleHref2={project.btnTitleHref2}
-      />
-    );
-  });
-
-  return <div className="ProjectsTowDiv">{ProjectMap}</div>;
-}
-
-function Project({
+function ComponentProjectSingle({
   src,
   tag,
   title,
@@ -37,6 +15,7 @@ function Project({
   let tagMap = tag.map((tag) => {
     return <span key={tag}>{tag}</span>;
   });
+
   return (
     <div className="Project">
       <div>
@@ -63,4 +42,4 @@ function Project({
   );
 }
 
-export default ProjectsTow;
+export default ComponentProjectSingle;

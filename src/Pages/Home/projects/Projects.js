@@ -1,9 +1,9 @@
 import { useEffect, useLayoutEffect, useRef } from "react";
 import { RightSideHandle } from "../../RightSide/RghtSide";
 import ProjectsCss from "./Projects.css";
-import ProjectsTow from "./ProjectsTow";
 import { Link } from "react-router-dom";
 import GetCoords from "../../../hooks/GetCoords";
+import ComponentProject from "../../../components/componentProject/ComponentProject";
 
 function Projects() {
   // Rectangle-2 == ProjectsTow
@@ -42,7 +42,7 @@ function Projects() {
         </div>
       </div>
       <div className="ProjectsTow" ref={Rectangle2}>
-        <ProjectsTow></ProjectsTow>
+        <ComponentProject />
       </div>
     </div>
   );
