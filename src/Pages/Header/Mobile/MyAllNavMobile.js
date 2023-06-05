@@ -8,31 +8,60 @@ import { ReactComponent as Close } from "../../.././assets/img/close.svg";
 import { ReactComponent as Vector } from "../../.././assets/NavMobile/img/Vector.svg";
 import { ReactComponent as Dribble } from "../../.././assets/NavMobile/img/Dribble.svg";
 import { ReactComponent as Figma } from "../../.././assets/NavMobile/img/Figma.svg";
+import { useTranslation } from "react-i18next";
 
-let data = [
-  {
-    id: 1,
-    title: "home",
-    href: "",
-  },
-  {
-    id: 2,
-    title: "works",
-    href: "Projects",
-  },
-  {
-    id: 3,
-    title: "about-me",
-    href: "about-me",
-  },
-  {
-    id: 4,
-    title: "contacts",
-    href: "contacts",
-  },
-];
+let data;
 
 export default function MyAllNavMobile({ menuOpen, toggleMenu }) {
+  const { t, i18n } = useTranslation();
+  if (i18n.language === "ar") {
+    data = [
+      {
+        id: 1,
+        title: " الصفحة الرئيسية ",
+        href: "",
+      },
+      {
+        id: 2,
+        title: " المشاريع",
+        href: "Projects",
+      },
+      {
+        id: 3,
+        title: " من انا ",
+        href: "about-me",
+      },
+      {
+        id: 4,
+        title: " تواصل معي ",
+        href: "contacts",
+      },
+    ];
+  } else {
+    data = [
+      {
+        id: 1,
+        title: "home",
+        href: "",
+      },
+      {
+        id: 2,
+        title: "works",
+        href: "Projects",
+      },
+      {
+        id: 3,
+        title: "about-me",
+        href: "about-me",
+      },
+      {
+        id: 4,
+        title: "contacts",
+        href: "contacts",
+      },
+    ];
+  }
+
   let dataMap = data.map((item, index) => {
     return (
       <NavItemMobile id={item.id} key={index} href={item.href}>
@@ -41,9 +70,9 @@ export default function MyAllNavMobile({ menuOpen, toggleMenu }) {
     );
   });
 
-  useEffect(()=>{
+  useEffect(() => {
     document.querySelector("body").classList.toggle("overflow");
-  }, [menuOpen])
+  }, [menuOpen]);
   if (menuOpen) {
     return (
       <div className="NavAllMobileDiv">
@@ -54,14 +83,20 @@ export default function MyAllNavMobile({ menuOpen, toggleMenu }) {
               <Close />
             </div>
           </div>
-          <div className="NavAllMobile">
+          <div
+            className={
+              i18n.language === "ar" ? "NavAllMobile-AR" : "NavAllMobile"
+            }
+          >
             {dataMap}
             <SelectLanguageMobile></SelectLanguageMobile>
           </div>
         </div>
         <div className="SocialMobileDIV">
           <div className="SocialMobile">
-            <Vector />
+            <Link target="_blank" to={"https://github.com/mohamed404eg"}>
+              <Vector />
+            </Link>
             <Dribble />
             <Figma />
           </div>
@@ -69,6 +104,6 @@ export default function MyAllNavMobile({ menuOpen, toggleMenu }) {
       </div>
     );
   } else {
-    return <div className="NavAllMobileDivOut"></div>
+    return <div className="NavAllMobileDivOut"></div>;
   }
 }

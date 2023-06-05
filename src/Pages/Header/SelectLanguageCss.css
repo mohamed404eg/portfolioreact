@@ -67,6 +67,7 @@
 /* arrow */
 .arrow {
   padding-left: 4px;
+  padding-right: 4px;
   bottom: 1px;
   position: relative;
 }

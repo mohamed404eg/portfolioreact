@@ -68,3 +68,25 @@
     display: none;
   }
 }
+
+
+/* ar */
+.LeftSideDiv-Rectangle-1-AR {
+  position: absolute;
+  width: 100px;
+  height: 155px;
+  right:  -77px;
+
+  /* gray */
+
+  border: 1px solid var(--gray);
+}
+
+
+.Frame36Mycontacts-AR {
+  position: absolute;
+  width: 103px;
+  height: 103px;
+  right: -51px;
+  top: 0;
+}

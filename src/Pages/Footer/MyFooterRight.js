@@ -7,10 +7,11 @@ import Discord from "../../assets/Footer/Discord.svg";
 import { useTranslation } from "react-i18next";
 
 function MyFooterRight() {
-  const { t } = useTranslation();
+  const { t , i18n } = useTranslation();
+
   return (
     <div className="MyFooterRight">
-      <span>{t("Media")}</span>
+      <span className={i18n.language === "ar" ? "MyFooterRightSpan-AR" : "" }>{t("Media")}</span>
       <div className="MyFooterRightMedia">
         <Link to={"#"}>
           {" "}

@@ -6,7 +6,6 @@
   flex-direction: row;
   align-items: center;
   padding: 0px;
-
 }
 
 .AboutMeTitleHash {
@@ -42,6 +41,7 @@
 
   /* primary */
   background: var(--primary);
+  margin: 0 10px;
 }
 
 .AboutMeContent {

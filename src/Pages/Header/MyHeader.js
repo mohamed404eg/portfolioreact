@@ -46,7 +46,7 @@ function Header() {
   }, []);
 
   // useTranslation
-  const { t, i18next } = useTranslation();
+  const { t, i18n } = useTranslation();
   // useTranslation ==
 
   return (
@@ -73,7 +73,7 @@ function Header() {
         </Link>
       </div>
 
-      <div className="menu" onClick={toggleMenu}>
+      <div className={i18n.language === "ar" ? "menu-AR" : "menu"} onClick={toggleMenu}>
         <span></span>
         <span></span>
       </div>

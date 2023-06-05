@@ -4,8 +4,10 @@ import ProjectsCss from "./Projects.css";
 import { Link } from "react-router-dom";
 import GetCoords from "../../../hooks/GetCoords";
 import ComponentProject from "../../../components/componentProject/ComponentProject";
+import { useTranslation } from "react-i18next";
 
 function Projects() {
+  const { t, i18n } = useTranslation();
   // Rectangle-2 == ProjectsTow
   const Rectangle2 = useRef();
   useEffect(() => {
@@ -29,13 +31,13 @@ function Projects() {
           {" "}
           <div className="ProjectsOneDivElements">
             <span className="ProjectsOneDivHash">#</span>
-            <h2>Projects</h2>
+            <h2>{t("ProjectsOneDiv-h2")}</h2>
             <span className="ProjectsOneDivLine"></span>
           </div>
           <div className="ProjectsOneDivTow">
             <span>
               <Link to={"/PageProjects"}>
-                {"  More"} <span>{"~>"}</span>
+                {t("More")} <span>{"~>"}</span>
               </Link>
             </span>
           </div>

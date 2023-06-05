@@ -3,15 +3,20 @@ import Logo from "../../assets/Home/Logo-white.svg";
 import MyFooterLeftCss from "./MyFooterLeft.css";
 function MyFooterLeft() {
   const { t, i18n } = useTranslation();
+
   return (
     <div className="MyFooterLeft">
-      <div className="MyFooterLeftOne">
+      <div
+        className={
+          i18n.language === "ar" ? "MyFooterLeftOne-AR" : "MyFooterLeftOne"
+        }
+      >
         <div className="MyFooterLeft-Logo-Name">
           <img src={Logo} alt=""></img>
           <span>{t("title")}</span>
         </div>
 
-        <span className="MyFooterLeft-Email">elias@elias-dev.ml </span>
+        <span className="MyFooterLeft-Email">Mohamed404eg@gmail.com </span>
       </div>
 
       <div className="MyFooterLeftTow">

@@ -6,10 +6,11 @@ import { ReactComponent as Dribble } from "../../assets/NavMobile/img/Dribble.sv
 import { ReactComponent as Figma } from "../../assets/NavMobile/img/Figma.svg";
 import { useRef, useState } from "react";
 
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import LeftSideDivHome from "./LeftSideDivHome";
 import LeftSideAboutMeContent from "./LeftSideAboutMeContent";
 import LeftSidePageContacts from "./LeftSidePageContacts";
+import { useTranslation } from "react-i18next";
 
 let LeftSideHandle;
 
@@ -43,7 +44,9 @@ function LeftSide() {
       <div className="LeftSideDiv">
         <span className="LeftSideDiv-Line"></span>
         <div className="LeftSideDiv-media">
-          <Vector />
+          <Link target="_blank" to={"https://github.com/mohamed404eg"}>
+            <Vector />
+          </Link>
           <Dribble />
           <Figma />
         </div>

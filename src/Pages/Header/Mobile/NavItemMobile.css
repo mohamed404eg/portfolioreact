@@ -77,6 +77,26 @@
   flex-grow: 0;
 }
 
+ /* link hover */
+.NavItemMobile a:hover {
+  position: relative;
+  width: 0;
+}
+.NavItemMobile a:hover::after {
+  content: " ";
+  background-color: var(--primary);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+
+  height: 1px;
+ animation: A   400ms linear forwards;
+
+}
+
+
+
 .NavItemTitleMobile {
   width: 48px;
   height: 21px;

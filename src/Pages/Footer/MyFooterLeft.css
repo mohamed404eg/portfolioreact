@@ -1,9 +1,7 @@
 .MyFooterLeft {
   flex-basis: 50%;
   max-width: 50%;
-
 }
-
 
 .MyFooterLeftOne {
   display: flex;
@@ -20,68 +18,67 @@
   padding: 0px;
   gap: 9px;
 }
-.MyFooterLeft-Logo-Name img{
+.MyFooterLeft-Logo-Name img {
   width: 16px;
   height: 16px;
 }
-.MyFooterLeft-Logo-Name span{
-  font-family: 'Fira Code';
+.MyFooterLeft-Logo-Name span {
+  font-family: "Fira Code";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
 
-  
-  
   /* white */
-  
+
   color: var(--white);
 }
 
 .MyFooterLeft-Email {
-  font-family: 'Fira Code';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 21px;
-/* identical to box height */
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
 
+  /* gray */
 
-/* gray */
-
-color: var(--gray);
-margin-left: 24px;
+  color: var(--gray);
+  margin-left: 24px;
 }
 
 .MyFooterLeftTow {
-  font-family: 'Fira Code';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 21px;
-/* identical to box height */
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
 
+  /* white */
 
-/* white */
-
-color: var(--white);
-
+  color: var(--white);
 }
 
-
-@media screen and (max-width: 480px ) { 
+@media screen and (max-width: 480px) {
   .MyFooterLeft {
     flex-basis: 100%;
     max-width: 100%;
-  
   }
   .MyFooterLeftOne {
-   justify-content: center;
-   text-align: center;
+    justify-content: center;
+    text-align: center;
   }
-  .MyFooterLeftTow p{
- 
-   text-align: center;
+  .MyFooterLeftTow p {
+    text-align: center;
   }
-  
+} 
+
+/* ar  */
+
+.MyFooterLeftOne-AR {
+  display: flex;
+  column-gap: 10px;
+  flex-direction: row;
 }

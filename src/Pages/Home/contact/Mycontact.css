@@ -57,7 +57,7 @@
 .MycontactContentMedia {
   flex-basis: 50%;
   max-width: 50%;
-  max-width: 204px;
+  max-width: fit-content;
   max-height: 141px;
 }
 
@@ -79,9 +79,6 @@
   align-items: flex-start;
   padding: 16px;
   gap: 16px;
-
-  max-width: 204px;
-  max-height: 141px;
 
   border: 1px solid var(--gray);
 }
@@ -140,9 +137,12 @@
   .MycontactContentMedia {
     flex-basis: 100%;
     max-width: 100%;
-    max-width: 204px;
-    max-height: 141px;
   }
+  .MycontactContentMedia-Collation-media {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 644px) {
   .MycontactContentMedia {
     margin: 0 auto;
   }

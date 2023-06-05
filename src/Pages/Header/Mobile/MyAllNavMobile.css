@@ -47,7 +47,7 @@
   }
 
   100% {
-    opacity: .5;
+    opacity: 0.5;
     transform: translateY(150%);
   }
 }
@@ -78,4 +78,16 @@
   .NavAllMobileDiv {
     display: none;
   }
+}
+
+/* ar  */
+.NavAllMobile-AR {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  position: relative;
+  top: 95px;
+  width: auto;
 }

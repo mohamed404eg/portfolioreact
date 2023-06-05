@@ -3,11 +3,14 @@ import SelectLanguageCss from "./SelectLanguageCss.css";
 import i18next from "i18next";
 import { Direction } from "../../hooks/language/Direction";
 export default function SelectLanguage() {
-  let [language, setLanguage] = useState("EN");
+  let [language, setLanguage] = useState("AR");
   let [languagehtmlFor, setLanguagehtmlFor] = useState("languageInput");
   let GroupBtnRef = useRef();
   let arrowRef = useRef();
+  let inputRef = useRef();
+
   const handleLanguageArrowFocus = () => {
+
     GroupBtnRef.current.classList.toggle("SelectLanguageStyleAppear");
     // arrow
     if (!arrowRef.current.classList.contains("arrowDeg180")) {
@@ -81,6 +84,7 @@ export default function SelectLanguage() {
             name="languageInput"
             id="languageInput"
             value={language}
+            ref={inputRef}
             onChange={(event) => {
               handleLanguageArrowBlur();
               console.log("  c");

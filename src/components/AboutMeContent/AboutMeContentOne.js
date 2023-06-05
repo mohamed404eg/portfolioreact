@@ -2,9 +2,11 @@ import AboutMeContentOneCss from "./AboutMeContentOne.css";
 import { LeftSideHandle, LeftSideHandle2 } from "../../Pages/LeftSide/LeftSide";
 import GetCoords from "../../hooks/GetCoords";
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 function AboutMeContentOne({ btn }) {
   // Rectangle-3 == ProjectsTow
   const Rectangle3 = useRef();
+  const { t, i18n } = useTranslation();
   useEffect(() => {
     setTimeout(() => {
       LeftSideHandle(
@@ -38,18 +40,13 @@ function AboutMeContentOne({ btn }) {
   return (
     <div className="AboutMeContentOne">
       <div>
-        <p>Hello, i’m Mohamed!</p>
+        <p>{t('Hello, i’m Mohamed!')}</p>
         <p ref={Rectangle3}>
-          I’m a self-taught front-end developer based in Kyiv, Ukraine. I can
-          develop responsive websites from scratch and raise them into modern
-          user-friendly web experiences.
+         {t("AboutMeContentOne-1")}
         </p>
 
         <p>
-          Transforming my creativity and knowledge into a websites has been my
-          passion for over a year. I have been helping various clients to
-          establish their presence online. I always strive to learn about the
-          newest technologies and frameworks.
+        {t("AboutMeContentOne-2")}
         </p>
       </div>
       {btn ? <button>{"Read more ->"}</button> : " "}

@@ -1,17 +1,16 @@
 import React from "react";
 import Firstcss from "./First.css";
 import FirstButton from "./FirstButton";
-
+import { useTranslation } from 'react-i18next';
 function First() {
+  const { t, i18n } = useTranslation();
   return (
     <div className="First">
       {/* First one */}
       <div className="First-one">
         <h2>
-          Elias is a <span>web designer</span> and{" "}
-          <span>front-end developer</span>
-        </h2>
-        <p>He crafts responsive websites where technologies meet creativity</p>
+         {t("First-one-h2-1")}{" "}<span>{t("First-one-h2-2")}</span> {t()}</h2>
+        <p>{t("First-one-p")}</p>
 
         <FirstButton></FirstButton>
       </div>
@@ -30,10 +29,10 @@ function First() {
           alt=""
         ></img>
 
-        <div className="First-tow-welcome">
+        <div className={i18n.language === "ar" ? "First-tow-welcome-AR First-tow-welcome" : "First-tow-welcome"}>
           <span></span>
           <p>
-          Let's bring your ideas to life
+          {t("First-tow-welcome")}
           </p>
         </div>
       </div>

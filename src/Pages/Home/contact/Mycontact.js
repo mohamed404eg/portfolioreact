@@ -4,7 +4,9 @@ import EmailVector from "../../../assets/Home/EmailVector.svg";
 import { useEffect, useLayoutEffect, useRef } from "react";
 import { LeftSideHandle } from "../../LeftSide/LeftSide";
 import GetCoords from "../../../hooks/GetCoords";
+import { useTranslation } from "react-i18next";
 function Mycontact() {
+  const { t, i18n } = useTranslation();
   const MycontactTopRef = useRef();
 
   useEffect(() => {
@@ -25,22 +27,22 @@ function Mycontact() {
     <div className="Mycontact" ref={MycontactTopRef}>
       <div className="MycontactTitle">
         <span className="MycontactTitleHash">#</span>
-        <h3>Mycontact</h3> <span className="MycontactTitleLine"></span>
+        <h3>{t("contacts")}</h3> <span className="MycontactTitleLine"></span>
       </div>
 
       <div className="MycontactContent">
         <div className="MycontactContentText">
           <p id="MycontactContentGET">
-            I’m interested in freelance opportunities. However, if you have
-            other request or question, don’t hesitate to contact me
+          {t("MycontactContentGET")}
+          
           </p>
         </div>
         <div className="MycontactContentMedia">
-          <h6>Message me here</h6>
+          <h6> {t("Message me here")}</h6>
           <div className="MycontactContentMedia-Collation-media">
             <div className="MycontactContentMedia-media">
               <img src={DiscordVector} alt=""></img>
-              <span>!Elias#3519</span>
+              <span>Mohamed404eg@gmail.com</span>
             </div>
 
             <div className="MycontactContentMedia-media">

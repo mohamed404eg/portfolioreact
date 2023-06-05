@@ -4,8 +4,10 @@ import { useEffect, useLayoutEffect, useState } from "react";
 import { useRef } from "react";
 import { RightSideHandle } from "../../RightSide/RghtSide";
 import GetCoords from "../../../hooks/GetCoords";
+import { useTranslation } from "react-i18next";
 
 function Quote() {
+  const { t, i18n } = useTranslation();
   const QuoteOneTopRef = useRef();
 
   useEffect(() => {
@@ -31,7 +33,7 @@ function Quote() {
             <DoubleQuotationRight />
           </span>
           <div className="Quote-one">
-            <p>With great power comes great electricity bill</p>
+            <p>{t("Quote-one")}</p>
           </div>
           <span className="QuoteOne-Double-Quotation-tow">
             <DoubleQuotationRight />
@@ -39,7 +41,7 @@ function Quote() {
         </div>
         {/* QuoteTow */}
         <div className="QuoteTow">
-          <p>- Dr. Who</p>
+          <p>{t("QuoteTow")}</p>
         </div>
         {/* == QuoteTow ==*/}
       </div>

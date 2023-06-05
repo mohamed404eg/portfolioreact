@@ -2,28 +2,7 @@ import React from "react";
 import NavItem from "./NavItem";
 import SelectLanguage from "./SelectLanguage";
 import { useTranslation } from "react-i18next";
-let data = [
-  {
-    id: 1,
-    title: "home",
-    href: "",
-  },
-  {
-    id: 2,
-    title: "works",
-    href: "Projects",
-  },
-  {
-    id: 3,
-    title: "about-me",
-    href: "about-me",
-  },
-  {
-    id: 4,
-    title: "contacts",
-    href: "contacts",
-  },
-];
+let data;
 
 export default function MyAllNav() {
   const { t, i18n } = useTranslation();
@@ -31,12 +10,12 @@ export default function MyAllNav() {
     data = [
       {
         id: 1,
-        title: " الصفحة الرئسية ",
+        title: " الصفحة الرئيسية ",
         href: "",
       },
       {
         id: 2,
-        title: " المشريع ",
+        title: " المشاريع",
         href: "Projects",
       },
       {
@@ -47,6 +26,29 @@ export default function MyAllNav() {
       {
         id: 4,
         title: " تواصل معي ",
+        href: "contacts",
+      },
+    ];
+  } else {
+    data = [
+      {
+        id: 1,
+        title: "home",
+        href: "",
+      },
+      {
+        id: 2,
+        title: "works",
+        href: "Projects",
+      },
+      {
+        id: 3,
+        title: "about-me",
+        href: "about-me",
+      },
+      {
+        id: 4,
+        title: "contacts",
         href: "contacts",
       },
     ];

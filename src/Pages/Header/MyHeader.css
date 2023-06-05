@@ -51,8 +51,7 @@
   flex-grow: 0;
   transition: ease 400ms;
 }
-.LogoImgText:hover > .LogoSvg
-{
+.LogoImgText:hover > .LogoSvg {
   transform: rotate(360deg);
 }
 
@@ -69,6 +68,7 @@
   height: 24px;
 }
 
+
 .menu span:first-child {
   content: " ";
   display: block;
@@ -78,22 +78,71 @@
 }
 
 .menu span:last-child {
-    content: " ";
-    margin-top: 3px;
-    width: 15px;
-    height: 2px;
-    left: 9px;
-    position: relative;
-    display: block;
+  content: " ";
+  margin-top: 3px;
+  width: 15px;
+  height: 2px;
+  left: 9px;
+  position: relative;
+  display: block;
   background-color: var(--menu-color);
   transition: all 400ms;
 }
 
 .menu:hover > span:last-child {
   left: 4.5px;
+}
+
+@media screen and (min-width: 630px) {
+  .menu {
+    display: none;
+  }
+}
+
+/* ar  */
+
+.menu-AR {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  top: 30px;
+  position: absolute;
+  left: 15px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+
 
 }
 
-@media screen and (min-width:630px){ 
-  .menu { display: none;}
+.menu-AR span:first-child {
+  content: " ";
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--menu-color);
 }
+
+.menu-AR span:last-child {
+  content: " ";
+  margin-top: 3px;
+  width: 15px;
+  height: 2px;
+  left: 0;
+  position: relative;
+  display: block;
+  background-color: var(--menu-color);
+  transition: all 400ms;
+}
+
+.menu-AR:hover > span:last-child {
+  right:  4.5px;
+}
+
+@media screen and (min-width: 630px) {
+  .menu-AR {
+    display: none;
+  }
+}
+

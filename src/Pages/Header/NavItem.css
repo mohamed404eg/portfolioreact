@@ -81,6 +81,7 @@
 
 }
 
+
 .NavItemTitle {
   width: 48px;
   height: 21px;
@@ -107,6 +108,32 @@
 .NavItemTitleACTIVE {
   color: var(--white) !important;
 }
+.NavAll a:hover {
+  position: relative;
+  width: 0;
+}
+.NavAll a:hover::after {
+  content: " ";
+  background-color: var(--primary);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+
+  height: 1px;
+ animation: A   400ms linear forwards;
+
+}
+
+@keyframes A {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 
 
 @media screen and (max-width:630px){
