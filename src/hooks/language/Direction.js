@@ -9,4 +9,5 @@ export function Direction() {
   } else if (i18n.language === "en") {
     document.body.style.direction = "ltr";
   }
+  return i18n.language;
 }

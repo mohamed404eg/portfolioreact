@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import Github from "../../assets/Footer/Github.svg";
 import Figma from "../../assets/Footer/Figma.svg";
 import Discord from "../../assets/Footer/Discord.svg";
+import { useTranslation } from "react-i18next";
 
 function MyFooterRight() {
+  const { t } = useTranslation();
   return (
     <div className="MyFooterRight">
-      <span>Media</span>
+      <span>{t("Media")}</span>
       <div className="MyFooterRightMedia">
         <Link to={"#"}>
           {" "}
