@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
+import { useTranslation } from "react-i18next";
+
 // css
 import MyHeader from "./MyHeader.css";
 // css \\
@@ -20,7 +22,6 @@ function Header() {
   toggleMenu = () => {
     SetMenuOpen(!menuOpen);
   };
-
 
   // on on Click logo than rest navBar
   useEffect(() => {
@@ -44,6 +45,10 @@ function Header() {
     });
   }, []);
 
+  // useTranslation
+  const { t, i18next } = useTranslation();
+  // useTranslation ==
+
   return (
     <header className="MyHeader">
       <div className="LogoImgText" ref={logo}>
@@ -64,7 +69,7 @@ function Header() {
           </svg>
         </Link>
         <Link to={"./"}>
-          <h1 className="LogoText">Mohamed</h1>
+          <h1 className="LogoText">{t("title")}</h1>
         </Link>
       </div>
 

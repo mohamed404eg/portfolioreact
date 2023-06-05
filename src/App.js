@@ -9,8 +9,12 @@ import PageProjects from "./Pages/PageProjects/PageProjects";
 import MyHeader from "./Pages/Header/MyHeader";
 import PageAbout from "./Pages/PageAbout/PageAbout";
 import PageContacts from "./Pages/PageContacts/PageContacts";
+import "./i18n";
+
 
 function App() {
+
+
   return (
     <BrowserRouter>
       <div className="portFolio">

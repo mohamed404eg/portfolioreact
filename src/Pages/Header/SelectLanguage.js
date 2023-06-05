@@ -1,12 +1,13 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import SelectLanguageCss from "./SelectLanguageCss.css";
+import i18next from "i18next";
+import { Direction } from "../../hooks/language/Direction";
 export default function SelectLanguage() {
   let [language, setLanguage] = useState("EN");
   let [languagehtmlFor, setLanguagehtmlFor] = useState("languageInput");
   let GroupBtnRef = useRef();
   let arrowRef = useRef();
   const handleLanguageArrowFocus = () => {
-    console.log("handleLanguageArrowFocus");
     GroupBtnRef.current.classList.toggle("SelectLanguageStyleAppear");
     // arrow
     if (!arrowRef.current.classList.contains("arrowDeg180")) {
@@ -57,6 +58,14 @@ export default function SelectLanguage() {
     }, 150);
     // Group Btn Ref \\
   };
+
+  // language
+  useEffect(() => {
+    let languageLowercase = language.toLocaleLowerCase();
+    i18next.changeLanguage(languageLowercase).then((t) => {});
+  }, [language]);
+  Direction();
+  // language
 
   return (
     <>
