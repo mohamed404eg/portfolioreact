@@ -38,4 +38,5 @@ Implement a contact form for visitors to get in touch.
 
 ### June 6, 2023, I will continue translating the project into Arabic on 2023/6/6.
 
-I will be using the i18n React library today to complete the translation.
+- I will be using the i18n React library today to complete the translation.
+- I have corrected some errors in translating from Arabic to English.

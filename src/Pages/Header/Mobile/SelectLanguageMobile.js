@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import SelectLanguageMobile from "./SelectLanguageMobile.css";
+import { SelectLanguageHandle } from "../SelectLanguage";
+import { useTranslation } from "react-i18next";
 export default function SelectLanguage() {
-  let [language, setLanguage] = useState("EN");
+  const { t, i18n } = useTranslation();
   let [languagehtmlFor, setLanguagehtmlFor] = useState("languageInputMobile");
   let GroupBtnRef = useRef();
   let arrowRef = useRef();
@@ -14,7 +16,7 @@ export default function SelectLanguage() {
   const handleLanguageArrowBlur = () => {
     setTimeout(() => {
       GroupBtnRef.current.classList.toggle("SelectLanguageStyleAppearMobile");
-    }, 90);
+    }, 150);
 
     // htmlFor
     setLanguagehtmlFor(" ");
@@ -32,7 +34,8 @@ export default function SelectLanguage() {
   };
 
   function handleLanguage(event) {
-    setLanguage((e) => (e = event.target.name));
+    SelectLanguageHandle(event.target.name);
+
     setTimeout(() => {
       GroupBtnRef.current.classList.remove("SelectLanguageStyleAppearMobile");
     }, 150);
@@ -53,15 +56,13 @@ export default function SelectLanguage() {
     // Group Btn Ref \\
   };
 
-  useEffect(handleLanguageArrowBlur, [language]);
-
   return (
     <>
       {/* Appear selectedLanguage */}
       <div className="SelectLanguageMobile">
         {/* // Appear selectedLanguage \\ */}
         <div className="SelectedLanguage">
-          <label htmlFor={languagehtmlFor}>{language}</label>
+          <label htmlFor={languagehtmlFor}>{i18n.language}</label>
 
           <select
             id="languageInputMobile"

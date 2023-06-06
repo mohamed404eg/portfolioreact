@@ -6,6 +6,7 @@ export function Direction() {
 
   if (i18n.language === "ar") {
     document.body.style.direction = "rtl";
+    
   } else if (i18n.language === "en") {
     document.body.style.direction = "ltr";
   }
