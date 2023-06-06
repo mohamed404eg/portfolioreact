@@ -1,4 +1,4 @@
-ملف المشروع بالغة العربية [ اضغط هنا للغة العربية ](https://github.com/mohamed404eg/portfolioreact/blob/e5227425e35ce994472b802498c3d585bba750d0/README-AR.md).
+ملف المشروع بالغة العربية [ اضغط هنا للغة العربية ](https://github.com/mohamed404eg/portfolioreact/blob/master/README-AR.md).
 
 # Portfolio React
 
