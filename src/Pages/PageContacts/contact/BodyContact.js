@@ -4,8 +4,9 @@ import DiscordVector from "../../../assets/Home/DiscordVector.svg";
 import EmailVector from "../../../assets/Home/EmailVector.svg";
 import { RightSideHandle } from "../../RightSide/RghtSide";
 import GetCoords from "../../../hooks/GetCoords";
+import { useTranslation } from "react-i18next";
 
-function BodyContact() {
+function BodyContact() { const { t, i18n } = useTranslation();
   // RightSidePageContactsState
   const SkillsP = useRef();
   useEffect(() => {
@@ -27,18 +28,17 @@ function BodyContact() {
     <div className="BodyContact">
       <div className="BodyContactOne">
         <p>
-          I’m interested in freelance opportunities. However, if you have other
-          request or question, don’t hesitate to contact me
+          {t("MycontactContentGET")}
         </p>
       </div>
 
       <div className="BodyContactTow">
-        <div className="BodyContactTow-Support">
-          <p ref={SkillsP}>Support me here</p>
+        <div className={i18n.language === "ar" ? "BodyContactTow-Support-AR BodyContactTow-Support":"BodyContactTow-Support"}>
+          <p ref={SkillsP}>{t("Support me here")}</p>
           <p>4149500120690030</p>
         </div>
-        <div className="BodyContactMedia">
-          <h6>Message me here </h6>
+        <div className={i18n.language === "ar" ? "BodyContactMedia-AR BodyContactMedia":"BodyContactMedia"}>
+          <h6>{t("Message me here")}</h6>
           <div className="BodyContactMedia-Collation-media">
             <div className="BodyContactMedia-media">
               <img src={DiscordVector} alt=""></img>

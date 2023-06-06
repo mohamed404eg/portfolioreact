@@ -1,11 +1,19 @@
+import { useTranslation } from "react-i18next";
 import SkillsSectionTowCss from "./SkillsSectionTow.css";
 import SkillsSectionTowTag from "./SkillsSectionTowTag";
 function SkillsSectionTow() {
+  const { t, i18n } = useTranslation();
   return (
-    <div className="PageAboutSkillsSectionTow">
+    <div
+      className={
+        i18n.language === "ar"
+          ? "PageAboutSkillsSectionTow-AR  PageAboutSkillsSectionTow"
+          : "PageAboutSkillsSectionTow"
+      }
+    >
       <div className="PageAboutSkillsSectionTow-Languages">
         {/* tag */}
-        <SkillsSectionTowTag h5="Languages">
+        <SkillsSectionTowTag h5={t("Other")}>
           <span>HTML</span> <span>CSS</span>
           <span>JAVASCRIPT</span>
         </SkillsSectionTowTag>
@@ -14,7 +22,7 @@ function SkillsSectionTow() {
 
       <div className="PageAboutSkillsSectionTow-Other">
         {/* tag */}
-        <SkillsSectionTowTag h5="Other">
+        <SkillsSectionTowTag h5={t("Languages")}>
           <span>MUI</span>
           <span>Bootstrap</span>
           <span>Tailwind</span>
@@ -24,7 +32,7 @@ function SkillsSectionTow() {
       </div>
       <div className="PageAboutSkillsSectionTow-Tools">
         {/* tag */}
-        <SkillsSectionTowTag h5="Tools">
+        <SkillsSectionTowTag h5={t("Tools")}>
           <span>VSCode</span>
           <span>Figma</span>
           <span>Font Awesome</span>
@@ -33,16 +41,19 @@ function SkillsSectionTow() {
         </SkillsSectionTowTag>
         {/* ==tag== */}
       </div>
-      <div className="PageAboutSkillsSectionTow-Frameworks">  {/* tag */}
-        <SkillsSectionTowTag h5="Frameworks">
+      <div className="PageAboutSkillsSectionTow-Frameworks">
+        {" "}
+        {/* tag */}
+        <SkillsSectionTowTag h5={t("Frameworks")}>
           <span>React</span>
         </SkillsSectionTowTag>
-        {/* ==tag== */}</div>
-        
+        {/* ==tag== */}
+      </div>
+
       <div className="PageAboutSkillsSectionTow-Databases">
         {/* tag */}
-        <SkillsSectionTowTag h5="Databases">
-          <span>very soon</span>
+        <SkillsSectionTowTag h5={t("Databases")}>
+          <span>{t("very soon")}</span>
         </SkillsSectionTowTag>
         {/* ==tag== */}
       </div>

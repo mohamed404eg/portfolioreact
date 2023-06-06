@@ -8,8 +8,10 @@ import { Link } from "react-router-dom";
 import { LeftSideHandle } from "../LeftSide/LeftSide";
 import GetCoords from "../../hooks/GetCoords";
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 function PageContacts() {
+  const { t, i18n } = useTranslation();
   // LeftSidePageContacts
   const PageContactsRef = useRef();
   useEffect(() => {
@@ -29,10 +31,10 @@ function PageContacts() {
 
   return (
     <div className="PageContacts">
-      <PagePTitlePathname description={"Who am i?"} />
+      <PagePTitlePathname description={t("Who am i?")} />
       <Contact />
       <div ref={PageContactsRef}>
-        <TitleSection h3={"all-media"} LineWidth={0} />
+        <TitleSection h3={t("all-media")} LineWidth={0} />
       </div>
       <div className="all-media">
         <Link

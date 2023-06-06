@@ -7,6 +7,7 @@
   margin-top: 38px;
   justify-content: center;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .PageAboutSkillsSectionTow-Languages {
@@ -87,3 +88,7 @@
   color: var(--gray);
 }
 
+/* ar  */
+.PageAboutSkillsSectionTow-AR {
+  text-align: center;
+}
