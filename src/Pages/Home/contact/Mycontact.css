@@ -42,6 +42,7 @@
 
   /* primary */
   background: var(--primary);
+  margin: 0 10px;
 }
 .MycontactContent {
   display: flex;
