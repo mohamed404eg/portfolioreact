@@ -3,7 +3,7 @@
 - react
 - react routes
 - ii18n react
-- html \
+- html 
 - css
 - javascript
 
