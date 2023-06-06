@@ -73,6 +73,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 <!-- font size 400 600 usually used  -->
 
-##
+# Technology used in the project
 
-## اليوم سأقوم بستكمل ترجمة المشروع الي اللغة العربية 2023/6/6
+- React
+- React Router
+- i18n React
+- HTML 
+- CSS
+- JavaScript
+
+# Project Development History
+
+### Today, I will continue translating the project into Arabic on 2023/6/6.
+I will be using the i18n React library today to complete the translation.
+

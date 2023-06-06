@@ -1,12 +1,11 @@
 # التقنية المستخدم في المشروعة
 
-- react
-- react routes
-- ii18n react
-- html 
-- css
-- javascript
-
+- React
+- React Router
+- i18n React
+- HTML 
+- CSS
+- JavaScript
 # تاريخ تطوير المشروع
 
 ### اليوم سأقوم بستكمل ترجمة المشروع الي اللغة العربية 2023/6/6
