@@ -1,3 +1,5 @@
+ملف المشروع بالغة العربية [ اضغط هنا للغة العربية ](https://github.com/mohamed404eg/portfolioreact/blob/e5227425e35ce994472b802498c3d585bba750d0/README-AR.md).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
