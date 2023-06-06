@@ -1,3 +1,5 @@
+The project file is in English [click here for English] (https://github.com/mohamed404eg/portfolioreact).
+
 # التقنية المستخدم في المشروعة
 
 - React
