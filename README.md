@@ -71,4 +71,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 <!-- font size 400 600 usually used  -->
 
-## اليوم سافوم بستكمل ترجمة المشروع الي الغة العربية 2023/6/6
+##
+
+## اليوم سأقوم بستكمل ترجمة المشروع الي اللغة العربية 2023/6/6
