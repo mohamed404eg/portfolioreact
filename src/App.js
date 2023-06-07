@@ -65,6 +65,7 @@ function App() {
           <RightSide></RightSide>
         </div>
       </div>
+        <MyFooter />
     </>
   );
 }
