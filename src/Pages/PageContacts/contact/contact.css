@@ -73,7 +73,7 @@
   padding: 16px;
   gap: 16px;
 
-  max-width: 204px;
+  max-width: fit-content;
   max-height: 141px;
 
   border: 1px solid var(--gray);

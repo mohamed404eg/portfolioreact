@@ -21,7 +21,7 @@ function RightSideDivHome({ Rectangle1Top, Rectangle2Top, Rectangle3Top }) {
   return (
     <Routes>
       <Route
-        path={"/"}
+        path="/"
         element={
           <>
             <span
@@ -43,7 +43,7 @@ function RightSideDivHome({ Rectangle1Top, Rectangle2Top, Rectangle3Top }) {
         }
       ></Route>
       <Route
-        path={"/Projects"}
+        path="/Projects"
         element={
           <>
             <span

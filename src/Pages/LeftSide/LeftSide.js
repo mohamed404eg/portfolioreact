@@ -2,8 +2,8 @@ import LeftSideCss from "./LeftSide.css";
 // svg
 
 import { ReactComponent as Vector } from "../../assets/NavMobile/img/Vector.svg";
-import { ReactComponent as Dribble } from "../../assets/NavMobile/img/Dribble.svg";
-import { ReactComponent as Figma } from "../../assets/NavMobile/img/Figma.svg";
+import Linkedin from "../../assets/Media/Linkedin.svg";
+import Twitter from "../../assets/Media/Twitter.svg";
 import { useRef, useState } from "react";
 
 import { Link, Route, Routes } from "react-router-dom";
@@ -47,8 +47,15 @@ function LeftSide() {
           <Link target="_blank" to={"https://github.com/mohamed404eg"}>
             <Vector />
           </Link>
-          <Dribble />
-          <Figma />
+          <Link
+            target="_blank"
+            to={"https://www.linkedin.com/in/mohamed404eg/"}
+          >
+            <img src={Linkedin} alt="Linkedin"></img>
+          </Link>
+          <Link target="_blank" to={"https://twitter.com/mohamed404eg"}>
+            <img src={Twitter} alt="Twitter"></img>
+          </Link>
         </div>
 
         <LeftSideDivHome

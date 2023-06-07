@@ -6,7 +6,7 @@ function LeftSideAboutMeContent({ LeftSideAboutMeContentState }) {
   return (
     <Routes>
       <Route
-        path="about-me"
+        path="/about-me"
         element={
           <img
             style={{ top: LeftSideAboutMeContentState + "px" }}

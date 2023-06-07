@@ -7,7 +7,7 @@ function RightSideAboutMeContent({ RightSideAboutMeContentState }) {
     <>
       <Routes>
         <Route
-          path={"about-me"}
+          path="/about-me"
           element={
             <>
               <span
@@ -25,9 +25,9 @@ function RightSideAboutMeContent({ RightSideAboutMeContentState }) {
 function RightSideAboutMeContentSkills({ RightSideAboutMeContentSkillsState }) {
   return (
     <>
-      <Routes>
+      <Routes >
         <Route
-          path={"about-me"}
+          path="/about-me"
           element={
             <>
               <img

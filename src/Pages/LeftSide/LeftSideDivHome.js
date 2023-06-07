@@ -24,7 +24,7 @@ function LeftSideDivHome({ Rectangle1Top, Rectangle2Top }) {
   return (
     <Routes>
       <Route
-        path={"/"}
+        path="/"
         element={
           <>
             <span
@@ -45,7 +45,7 @@ function LeftSideDivHome({ Rectangle1Top, Rectangle2Top }) {
       />
 
       <Route
-        path={"/Projects"}
+        path="/Projects"
         element={
           <>
             <span

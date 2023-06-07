@@ -22,6 +22,31 @@
   border: 1px solid var(--primary);
 
   cursor: pointer;
+  position: relative;
+  z-index: 1;
+
+}
+
+.ContactMeBtn a {
+  color: var(--wihte);
+}
+
+.ContactMeBtn::before {
+  content:  "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--primary);
+  z-index: -1;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 400ms ease-in-out;
+}
+
+.ContactMeBtn:hover::before {
+  transform: scaleX(1);
 }
 
 @media screen and (max-width: 630px) {

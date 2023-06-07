@@ -6,7 +6,7 @@ function RightSidePageContacts({ RightSidePageContactsState }) {
     <>
       <Routes>
         <Route
-          path={"contacts"}
+          path="/contacts"
           element={
             <>
               <span

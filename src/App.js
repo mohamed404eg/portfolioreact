@@ -10,13 +10,11 @@ import MyHeader from "./Pages/Header/MyHeader";
 import PageAbout from "./Pages/PageAbout/PageAbout";
 import PageContacts from "./Pages/PageContacts/PageContacts";
 import "./i18n";
-
+import PageNotFound from "./Pages/PageNotFound";
 
 function App() {
-
-
   return (
-    <BrowserRouter>
+    <>
       <div className="portFolio">
         <div className="LeftSide">
           <LeftSide></LeftSide>
@@ -27,7 +25,7 @@ function App() {
           {/* Routes */}
           <Routes>
             <Route
-              path="/"
+            index
               element={
                 <>
                   <Home />{" "}
@@ -35,7 +33,7 @@ function App() {
               }
             />
             <Route
-              path="Projects"
+              path="/Projects"
               element={
                 <>
                   <Home />{" "}
@@ -43,7 +41,7 @@ function App() {
               }
             />
             <Route
-              path="about-me"
+              path="/about-me"
               element={
                 <>
                   <PageAbout />{" "}
@@ -51,14 +49,15 @@ function App() {
               }
             />
             <Route
-              path="contacts"
+              path="/contacts"
               element={
                 <>
                   <PageContacts />{" "}
                 </>
               }
             />
-            <Route path="PageProjects" element={<PageProjects />} />
+            <Route path="/PageProjects" element={<PageProjects />} />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
           {/* == Routes == */}
         </div>
@@ -66,8 +65,7 @@ function App() {
           <RightSide></RightSide>
         </div>
       </div>
-      <MyFooter />
-    </BrowserRouter>
+    </>
   );
 }
 

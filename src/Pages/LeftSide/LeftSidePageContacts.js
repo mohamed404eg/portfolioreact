@@ -6,7 +6,7 @@ function LeftSidePageContacts({ LeftSidePageContactsState }) {
   return (
     <Routes>
       <Route
-        path="contacts"
+        path="/contacts"
         element={
           <img
             style={{ top: LeftSidePageContactsState + "px" }}

@@ -11,7 +11,6 @@ const resources = {
 };
 i18n.use(initReactI18next).init({
   lng: "en",
-  partialBundledLanguages: true,
   debug: true,
   resources,
 });

@@ -1,5 +1,5 @@
 import MycontactCss from "./Mycontact.css";
-import DiscordVector from "../../../assets/Home/DiscordVector.svg";
+import Linkedin from "../../../assets/Media/Linkedin.svg";
 import EmailVector from "../../../assets/Home/EmailVector.svg";
 import { useEffect, useLayoutEffect, useRef } from "react";
 import { LeftSideHandle } from "../../LeftSide/LeftSide";
@@ -41,13 +41,13 @@ function Mycontact() {
           <h6> {t("Message me here")}</h6>
           <div className="MycontactContentMedia-Collation-media">
             <div className="MycontactContentMedia-media">
-              <img src={DiscordVector} alt=""></img>
-              <span>Mohamed404eg@gmail.com</span>
+              <img src={Linkedin} alt=""></img>
+              <span>@mohamed404eg</span>
             </div>
 
             <div className="MycontactContentMedia-media">
               <img src={EmailVector} alt=""></img>
-              <span>elias@elias.me</span>
+              <span>Mohamed404eg@gmail.com</span>
             </div>
           </div>
         </div>
