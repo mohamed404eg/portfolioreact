@@ -71,7 +71,11 @@ export default function MyAllNavMobile({ menuOpen, toggleMenu }) {
   });
 
   useEffect(() => {
-    document.querySelector("body").classList.toggle("overflow");
+    if (menuOpen === true) {
+      document.querySelector("body").classList.toggle("overflow");
+    } else {
+      document.querySelector("body").classList.remove("overflow");
+    }
   }, [menuOpen]);
   if (menuOpen) {
     return (
