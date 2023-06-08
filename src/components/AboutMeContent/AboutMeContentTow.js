@@ -51,12 +51,12 @@ function AboutMeContentTow() {
       </div>
       <span data-aos="zoom-out-up" className="AboutMeContentTowLine"></span>
 
-      <img data-aos="fade-left"
+      <img data-aos="fade-up"
         className="AboutMeContentTow-image1"
         src={Frame29}
         alt="Frame29"
       ></img  >
-      <img data-aos="fade-right"
+      <img data-aos="fade-up"
         className="AboutMeContentTow-image2"
         src={Frame30}
         alt="Frame29"

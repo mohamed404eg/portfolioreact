@@ -38,7 +38,7 @@ function AboutMeContentOne({ btn }) {
   // Rectangle-3 \\
 
   return (
-    <div className="AboutMeContentOne" data-aos="fade-right">
+    <div className="AboutMeContentOne" data-aos="fade-up">
       <div>
         <p>{t('Hello, i’m Mohamed!')}</p>
         <p ref={Rectangle3}>

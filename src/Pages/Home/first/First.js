@@ -22,8 +22,11 @@ function First() {
       {/*== First one == */}
       {/* First tow */}
       <div className="First-tow">
-        <div className="First-tow-background" data-aos="fade-up"
-     data-aos-anchor-placement="top-center"></div>
+        <div
+          className="First-tow-background"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+        ></div>
         <img
           data-aos="zoom-out-down"
           className="First-tow-Logo"
@@ -31,7 +34,7 @@ function First() {
           alt=""
         ></img>
         <img
-          data-aos="flip-right"
+          data-aos="flip-up"
           className="First-tow-Dots"
           src={"./assets/img/Dots.svg"}
           alt=""

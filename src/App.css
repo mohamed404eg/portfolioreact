@@ -57,7 +57,6 @@ body {
   float: left;
   flex-basis: 5%;
   transition: ease 400ms;
-  overflow: hidden;
 }
 .container {
   flex-basis: 90%;
@@ -66,7 +65,6 @@ body {
 .RightSide {
   flex-basis: 5%;
   transition: ease 400ms;
-  overflow: hidden;
 }
 
 .container1024 {

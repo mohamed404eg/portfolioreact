@@ -50,7 +50,7 @@ function RightSide() {
   };
 
   return (
-    <div className="RightSideDiv" data-aos="fade-left"
+    <div className="RightSideDiv" data-aos="fade-up"
     data-aos-anchor="#example-anchor"
     data-aos-offset="600"
     data-aos-duration="500">
