@@ -1,7 +1,7 @@
 The project file is in English [click here for English](https://github.com/mohamed404eg/portfolioreact).
 
 # [ معاينة الموقع ](https://mohamed404eg.netlify.app/)
-![Thumbnail](./public/Display%20pictures/Thumbnail.png)
+[![Thumbnail](./public/Display%20pictures/Thumbnail.png)](https://mohamed404eg.netlify.app/)
 # التقنية المستخدم في المشروعة
 
 - React
