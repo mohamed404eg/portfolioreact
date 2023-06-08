@@ -38,6 +38,7 @@ function SkillsSectionTow() {
           <span>Font Awesome</span>
           <span>VSCode</span>
           <span>Photoshop</span>
+          <span>Git & github</span>
         </SkillsSectionTowTag>
         {/* ==tag== */}
       </div>
