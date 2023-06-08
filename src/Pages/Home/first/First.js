@@ -26,7 +26,7 @@ function First() {
           className="First-tow-background"
           data-aos="fade-up"
           data-aos-anchor-placement="top-center"
-          data-aos-offset="900"
+          data-aos-offset="-500"
         ></div>
         <img
           data-aos="zoom-out-down"
