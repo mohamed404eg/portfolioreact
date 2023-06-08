@@ -11,12 +11,12 @@ This is a personal portfolio website built using React. The website showcases my
 
 # Technology Used
 
-React
-React Router
-i18n React
-HTML
-CSS
-JavaScript
+- React
+- React Router
+- i18n React
+- HTML
+- CSS
+- JavaScript
 #Project Development History
 
 ## June 4, 2023
