@@ -1,7 +1,9 @@
 ملف المشروع بالغة العربية [ اضغط هنا للغة العربية ](https://github.com/mohamed404eg/portfolioreact/blob/master/README-AR.md).
 
+# [Preview Site](https://mohamed404eg.netlify.app/)
 
-#  [Preview Site](https://mohamed404eg.netlify.app/)
+![Thumbnail](./public/Display%20pictures/Thumbnail.png)
+
 # Portfolio React
 
 This is a personal portfolio website built using React. The website showcases my skills, projects, and experience.
