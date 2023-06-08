@@ -41,7 +41,7 @@ function AboutMeContentTow() {
   // Rectangle-3 == ProjectsTow \\
   return (
     <div className="AboutMeContentTow" data-aos="fade-up">
-      <div className="AboutMeContentTow-image0Div"  data-aos="zoom-out-up">
+      <div className="AboutMeContentTow-image0Div"  data-aos="fade-up">
         <img
           className="AboutMeContentTow-image0"
           src={Image}
