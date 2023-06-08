@@ -1,5 +1,6 @@
 .AboutMe {
   margin-bottom: 112px;
+  overflow: hidden;
 }
 .AboutMeTitle {
   display: flex;
