@@ -47,3 +47,5 @@ Implement a contact form for visitors to get in touch.
 - Moved BrowserRouter to index.js
 - Replaced some social media icons
 - Completed the Arabic translation of the website
+
+### 2023/6/8 = Animate on scroll library

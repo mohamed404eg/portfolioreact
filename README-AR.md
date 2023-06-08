@@ -44,3 +44,5 @@ The project file is in English [click here for English](https://github.com/moham
 - نقل BrowserRouter الي index
 - تبديل بعض صور موقع التواصل
 - تم اكتامل ترجمة الموقع الغة العربية
+
+### 2023/6/8 = استكمال وضع  Animate on scroll library

@@ -5,6 +5,7 @@ import Frame30 from "../../assets/Home/Frame 30.svg";
 import { useEffect, useRef } from "react";
 import { RightSideHandle } from "../../Pages/RightSide/RghtSide";
 import GetCoords from "../../hooks/GetCoords";
+
 function AboutMeContentTow() {
   // Rectangle-3 == ProjectsTow
   const RightSideRectangle3 = useRef();
@@ -39,8 +40,8 @@ function AboutMeContentTow() {
   }, []);
   // Rectangle-3 == ProjectsTow \\
   return (
-    <div className="AboutMeContentTow">
-      <div className="AboutMeContentTow-image0Div">
+    <div className="AboutMeContentTow" data-aos="fade-up">
+      <div className="AboutMeContentTow-image0Div"  data-aos="zoom-out-up">
         <img
           className="AboutMeContentTow-image0"
           src={Image}
@@ -48,14 +49,14 @@ function AboutMeContentTow() {
           ref={RightSideRectangle3}
         ></img>
       </div>
-      <span className="AboutMeContentTowLine"></span>
+      <span data-aos="zoom-out-up" className="AboutMeContentTowLine"></span>
 
-      <img
+      <img data-aos="fade-left"
         className="AboutMeContentTow-image1"
         src={Frame29}
         alt="Frame29"
-      ></img>
-      <img
+      ></img  >
+      <img data-aos="fade-right"
         className="AboutMeContentTow-image2"
         src={Frame30}
         alt="Frame29"

@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ComponentProject from "../../components/componentProject/ComponentProject";
-
+import Aos from "aos";
+import { use } from "i18next";
 function PageProjectsComplete({ h2 }) {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  },[]);
   return (
     <div className="PageProjectsComplete">
       <div className="PageProjectsCompleteOne">
@@ -9,7 +13,7 @@ function PageProjectsComplete({ h2 }) {
         <h2>{h2}</h2>
       </div>
 
-      <div>
+      <div data-aos="fade-up">
         <ComponentProject />
         <ComponentProject />
       </div>

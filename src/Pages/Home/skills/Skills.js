@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 function Skills() {
   const { t, i18n } = useTranslation();
   return (
-    <div className="SkillsDiv">
+    <div className="SkillsDiv"  data-aos="fade-up"> 
       <div className="SkillsOne">
         {" "}
         <span className="SkillsOneHash">#</span> <h3>{t("Skills")}</h3>{" "}

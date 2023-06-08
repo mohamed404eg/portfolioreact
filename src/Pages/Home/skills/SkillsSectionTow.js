@@ -4,7 +4,7 @@ import SkillsSectionTowTag from "./SkillsSectionTowTag";
 function SkillsSectionTow() {
   const { t, i18n } = useTranslation();
   return (
-    <div className={i18n.language === "ar" ? "SkillsSectionTow SkillsSectionTow-AR":"SkillsSectionTow"}>
+    <div className={i18n.language === "ar" ? "SkillsSectionTow SkillsSectionTow-AR":"SkillsSectionTow"}  data-aos="fade-up">
       <div className="SkillsSectionTow-Languages">
         {/* tag */}
         <SkillsSectionTowTag h5={t("Languages")}>
