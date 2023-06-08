@@ -6,14 +6,14 @@
 }
 
 .AboutMeContentTow-image0 {
-  width: 100%;
+  bottom: 0;
   height: 507px;
+  left: 0;
   max-width: 339px;
   position: relative;
-  top: -60px;
-  left: 0;
   right: 0;
-  bottom: 0;
+  top: -31px;
+  width: 100%;
 }
 .AboutMeContentTow-image0Div {
   position: relative;
@@ -23,13 +23,13 @@
   float: right;
 }
 .AboutMeContentTow-image0Div::after {
+  border-bottom: 1px solid #f0f;
+  bottom: 30px;
   content: " ";
-  position: absolute;
-  bottom: 57px;
   height: 1px;
-  width: 80%;
   margin-left: 20px;
-  border-bottom: 1px solid magenta;
+  position: absolute;
+  width: 80%;
 }
 
 .AboutMeContentTow-image1 {
