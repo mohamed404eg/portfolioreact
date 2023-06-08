@@ -2,7 +2,8 @@
 
 # [Preview Site](https://mohamed404eg.netlify.app/)
 
-![Thumbnail](./public/Display%20pictures/Thumbnail.png)
+
+[![Thumbnail](./public/Display%20pictures/Thumbnail.png)](https://mohamed404eg.netlify.app/)
 
 # Portfolio React
 
