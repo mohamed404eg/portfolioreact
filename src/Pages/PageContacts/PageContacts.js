@@ -30,13 +30,13 @@ function PageContacts() {
   // LeftSidePageContacts \\
 
   return (
-    <div className="PageContacts">
+    <div className="PageContacts" data-aos="fade-up">
       <PagePTitlePathname description={t("Who am i?")} />
       <Contact />
-      <div ref={PageContactsRef}>
+      <div ref={PageContactsRef} data-aos="fade-up">
         <TitleSection h3={t("all-media")} LineWidth={0} />
       </div>
-      <div className="all-media">
+      <div className="all-media" data-aos="fade-up">
         <Link
           to={"https://twitter.com/mohamed404eg"}
           className="PageContacts-Twitter"

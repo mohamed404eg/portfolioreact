@@ -12,6 +12,10 @@ import PageContacts from "./Pages/PageContacts/PageContacts";
 import "./i18n";
 import PageNotFound from "./Pages/PageNotFound";
 
+// Animation
+import "aos/dist/aos.css";
+import Aos from "aos";
+
 function App() {
   return (
     <>
@@ -25,7 +29,7 @@ function App() {
           {/* Routes */}
           <Routes>
             <Route
-            index
+              index
               element={
                 <>
                   <Home />{" "}
@@ -65,7 +69,7 @@ function App() {
           <RightSide></RightSide>
         </div>
       </div>
-        <MyFooter />
+      <MyFooter />
     </>
   );
 }

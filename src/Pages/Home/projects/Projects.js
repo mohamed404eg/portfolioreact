@@ -25,7 +25,7 @@ function Projects() {
   }, []);
   // Rectangle-2 \\
   return (
-    <div className="ProjectsDiv" id="Projects">
+    <div className="ProjectsDiv" id="Projects"  data-aos="fade-up">
       <div className="ProjectsOne">
         <div className="ProjectsOneDiv">
           {" "}

@@ -11,7 +11,9 @@ import LeftSideDivHome from "./LeftSideDivHome";
 import LeftSideAboutMeContent from "./LeftSideAboutMeContent";
 import LeftSidePageContacts from "./LeftSidePageContacts";
 import { useTranslation } from "react-i18next";
-
+// Animation
+import "aos/dist/aos.css";
+import Aos from "aos";
 let LeftSideHandle;
 
 function LeftSide() {
@@ -41,7 +43,13 @@ function LeftSide() {
 
   return (
     <>
-      <div className="LeftSideDiv">
+      <div
+        className="LeftSideDiv"
+        data-aos="fade-right"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="600"
+        data-aos-duration="500"
+      >
         <span className="LeftSideDiv-Line"></span>
         <div className="LeftSideDiv-media">
           <Link target="_blank" to={"https://github.com/mohamed404eg"}>

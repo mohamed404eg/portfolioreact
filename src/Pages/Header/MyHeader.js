@@ -11,6 +11,7 @@ import MyAllNav from "./MyAllNav";
 import MyAllNavMobile from "./Mobile/MyAllNavMobile";
 
 import SelectLanguage from "./SelectLanguage";
+import Aos from "aos";
 
 // export handle open
 let toggleMenu;
@@ -49,7 +50,9 @@ function Header() {
   const { t, i18n } = useTranslation();
   // useTranslation ==
 
- 
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <header className="MyHeader">
       <div className="LogoImgText" ref={logo}>
@@ -74,7 +77,10 @@ function Header() {
         </Link>
       </div>
 
-      <div className={i18n.language === "ar" ? "menu-AR" : "menu"} onClick={toggleMenu}>
+      <div
+        className={i18n.language === "ar" ? "menu-AR" : "menu"}
+        onClick={toggleMenu}
+      >
         <span></span>
         <span></span>
       </div>

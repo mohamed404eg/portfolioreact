@@ -6,8 +6,8 @@ import { useTranslation } from "react-i18next";
 function Facts() {
   const { t, i18n } = useTranslation();
   return (
-    <div>
-      <TitleSection h3={t("my-fun-facts")} LineWidth={0} />
+    <div data-aos="fade-up">
+      <TitleSection h3={t("my-fun-facts")} LineWidth={0}  />
 
       <div className="FactsSection">
         <div className="FactsSectionOne">

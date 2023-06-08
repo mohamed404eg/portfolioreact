@@ -21,10 +21,16 @@ function Mycontact() {
       LeftSideHandle("LeftSideDiv-Rectangle-2", GetCoords(Rectangle2).top);
     });
     // LeftSideDiv-Rectangle-2  === Mycontact \\
+
+
+
+
   }, []);
 
+
+
   return (
-    <div className="Mycontact" ref={MycontactTopRef}>
+    <div className="Mycontact" ref={MycontactTopRef} data-aos="fade-up">
       <div className="MycontactTitle">
         <span className="MycontactTitleHash">#</span>
         <h3>{t("contacts")}</h3> <span className="MycontactTitleLine"></span>

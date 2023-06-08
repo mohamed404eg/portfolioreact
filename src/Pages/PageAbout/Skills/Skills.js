@@ -24,7 +24,7 @@ function Skills() {
   // RightSideAboutMeContentSkills \\
 
   return (
-    <div className="PageAboutSkillsDiv">
+    <div className="PageAboutSkillsDiv" data-aos="fade-up">
       <div className="PageAboutSkillsOne" ref={SkillsH3}>
         {" "}
         <span className="PageAboutSkillsOneHash">#</span> <h3>{t("Skills")}</h3>{" "}

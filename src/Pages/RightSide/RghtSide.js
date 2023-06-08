@@ -8,7 +8,9 @@ import RightSideAboutMeContent, {
 } from "./RightSideAboutMeContent";
 import RightSidePageContacts from "./RightSidePageContacts";
 // svg
-
+// Animation
+import "aos/dist/aos.css";
+import Aos from "aos";
 let RightSideHandle;
 function RightSide() {
   // useState
@@ -48,7 +50,10 @@ function RightSide() {
   };
 
   return (
-    <div className="RightSideDiv">
+    <div className="RightSideDiv" data-aos="fade-left"
+    data-aos-anchor="#example-anchor"
+    data-aos-offset="600"
+    data-aos-duration="500">
       <RightSideDivHome
         Rectangle1Top={Rectangle1Top}
         Rectangle2Top={Rectangle2Top}

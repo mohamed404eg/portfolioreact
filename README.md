@@ -41,9 +41,11 @@ Implement a contact form for visitors to get in touch.
 - I will be using the i18n React library today to complete the translation.
 - I have corrected some errors in translating from Arabic to English.
 
-### 2023/6/6 = Today was productive with some improvements
+### 2023/6/7 = Today was productive with some improvements
 
 - Added social media links
 - Moved BrowserRouter to index.js
 - Replaced some social media icons
 - Completed the Arabic translation of the website
+
+### 2023/6/8 = Animate on scroll library
