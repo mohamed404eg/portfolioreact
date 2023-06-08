@@ -22,13 +22,16 @@ function First() {
       {/*== First one == */}
       {/* First tow */}
       <div className="First-tow">
-        <div className="First-tow-background"></div>
+        <div className="First-tow-background" data-aos="fade-up"
+     data-aos-anchor-placement="top-center"></div>
         <img
+          data-aos="zoom-out-down"
           className="First-tow-Logo"
           src={"./assets/img/Logo.svg"}
           alt=""
         ></img>
         <img
+          data-aos="flip-right"
           className="First-tow-Dots"
           src={"./assets/img/Dots.svg"}
           alt=""
