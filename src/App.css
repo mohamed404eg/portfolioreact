@@ -51,13 +51,13 @@ body {
   display: flex;
   justify-content: space-between;
   background: var(--primary-background-color);
-  overflow-x: hidden;
 }
 
 .LeftSide {
   float: left;
   flex-basis: 5%;
   transition: ease 400ms;
+  overflow: hidden;
 }
 .container {
   flex-basis: 90%;
@@ -66,6 +66,7 @@ body {
 .RightSide {
   flex-basis: 5%;
   transition: ease 400ms;
+  overflow: hidden;
 }
 
 .container1024 {
@@ -139,4 +140,3 @@ body {
     flex-basis: 0;
   }
 }
-git
