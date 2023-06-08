@@ -1,5 +1,7 @@
 The project file is in English [click here for English](https://github.com/mohamed404eg/portfolioreact).
 
+# [ معاينة الموقع ](https://mohamed404eg.netlify.app/)
+
 # التقنية المستخدم في المشروعة
 
 - React
@@ -45,4 +47,4 @@ The project file is in English [click here for English](https://github.com/moham
 - تبديل بعض صور موقع التواصل
 - تم اكتامل ترجمة الموقع الغة العربية
 
-### 2023/6/8 = استكمال وضع  Animate on scroll library
+### 2023/6/8 = استكمال وضع Animate on scroll library
