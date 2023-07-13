@@ -1,46 +1,49 @@
-
 [
-
-
     {
-        "id" : 1,
-    "src": "../assets/Home/Rectangle 22.jpg",
-    "tag": [
-    "HTML" , 
-    "CSS"  , 
-    "JS " ],
-    "title": "ChertNodes",
-    "description": "Minecraft servers hosting",
-    "btnTitle": "Learn  More",
-    "btnTitleHref": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "btnTitle2": "Demo |>",
-    "btnTitleHref2": ""
-
-},
-    {    "id" :2,
-        "src": "../../../assets/Home/Rectangle 22.jpg",
+        "id": 1,
+        "src": "https://github.com/mohamed404eg/ecommercereact/raw/main/public/Display/Thumbnail.png",
         "tag": [
-        "HTML" , 
-        "CSS"  , 
-        "JS " ],
-        "title": "ChertNodes2",
-        "description": "Minecraft servers hosting",
-        "btnTitle": "Live <~>",
-        "btnTitleHref": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        "btnTitle2": "",
-        "btnTitleHref2": ""
-},
-    {    "id" : 3,
-        "src": "../../../assets/Home/Rectangle 22.jpg",
-        "tag": [
-        "HTML" , 
-        "CSS"  , 
-        "JS " ],
-        "title": "ChertNodes3",
-        "description": "Minecraft servers hosting",
+            "HTML",
+            "CSS",
+            "JS ",
+            "React"
+        ],
+        "title": "E-commerce Store React",
+        "description": "Welcome to our React-based E-commerce Store Project",
         "btnTitle": "Learn  More",
-        "btnTitleHref": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "btnTitleHref": "https://github.com/mohamed404eg/ecommercereact",
         "btnTitle2": "Demo |>",
-        "btnTitleHref2": ""
-}
+        "btnTitleHref2": "https://e-r.netlify.app/"
+    },
+    {
+        "id": 2,
+        "src": "../assets/Projects/to-do-list.png",
+        "tag": [
+            "HTML",
+            "CSS",
+            "JS ",
+            "React"
+        ],
+        "title": "To Do List",
+        "description": "To Do List ",
+        "btnTitle": "Learn  More",
+        "btnTitleHref": "https://github.com/mohamed404eg/to-do-list",
+        "btnTitle2": "Demo |>",
+        "btnTitleHref2": "https://pivotal-triode-366120.web.app/"
+    },
+    {
+        "id": 3,
+        "src": "../assets/Projects/hosting/.png",
+        "tag": [
+            "HTML",
+            "CSS",
+            "JS "
+        ],
+        "title": "hosting",
+        "description": "hosting",
+        "btnTitle": "Learn  More",
+        "btnTitleHref": "https://github.com/mohamed404eg/hosting",
+        "btnTitle2": "Demo |>",
+        "btnTitleHref2": "https://mohamed404eg.github.io/hosting/"
+    }
 ]

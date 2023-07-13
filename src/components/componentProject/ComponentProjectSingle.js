@@ -19,7 +19,7 @@ function ComponentProjectSingle({
   return (
     <div className="Project">
       <div>
-        <img src={Rectangle22} alt="Rectangle22"></img>
+        <img src={src} alt="Rectangle22"></img>
       </div>
       <div className="ProjectTag">{tagMap}</div>
       <div className="ProjectBody">
@@ -27,12 +27,16 @@ function ComponentProjectSingle({
         <p>{description}</p>
         <div className="ProjectLinks">
           {btnTitle !== "" && btnTitle !== null ? (
-            <Link to={btnTitleHref}>{btnTitle}</Link>
+            <Link target="_blank" to={btnTitleHref}>
+              {btnTitle}
+            </Link>
           ) : (
             ""
           )}
           {btnTitle2 !== "" && btnTitle2 !== null ? (
-            <Link to={btnTitleHref2}>{btnTitle2}</Link>
+            <Link target="_blank" to={btnTitleHref2}>
+              {btnTitle2}
+            </Link>
           ) : (
             ""
           )}
