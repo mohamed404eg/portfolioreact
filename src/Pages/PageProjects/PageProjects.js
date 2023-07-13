@@ -9,9 +9,9 @@ function PageProjects() {
     <div className="PageProjectsTOP">
       <PagePTitlePathname> </PagePTitlePathname>
 
-      <PageProjectsGroup h2={t("complete-apps")}/>
+      <PageProjectsGroup h2={t("complete-apps")} />
       <div className="small-projects">
-        <PageProjectsGroup h2={t("small-projects")} />
+        <PageProjectsGroup small={true} h2={t("small-projects")} />
       </div>
     </div>
   );

@@ -17,7 +17,7 @@
     },
     {
         "id": 2,
-        "src": "../assets/Projects/to-do-list.png",
+        "src": "https://github.com/mohamed404eg/portfolioreact/blob/main/src/assets/Projects/to-do-list.png?raw=true",
         "tag": [
             "HTML",
             "CSS",
@@ -33,7 +33,7 @@
     },
     {
         "id": 3,
-        "src": "../assets/Projects/hosting/.png",
+        "src": "https://github.com/mohamed404eg/portfolioreact/blob/main/src/assets/Projects/hosting.png?raw=true",
         "tag": [
             "HTML",
             "CSS",
