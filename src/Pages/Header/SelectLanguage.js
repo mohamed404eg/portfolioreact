@@ -72,7 +72,7 @@ export default function SelectLanguage() {
   useEffect(() => {
     let languageLowercase = language.toLocaleLowerCase();
     i18next.changeLanguage(languageLowercase).then((t) => {});
-    console.log("rendering2");
+ 
   }, [language]);
   Direction();
   // language

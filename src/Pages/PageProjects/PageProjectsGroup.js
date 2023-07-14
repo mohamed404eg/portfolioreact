@@ -14,7 +14,7 @@ function PageProjectsComplete({ h2 , small }) {
       </div>
 
       <div data-aos="fade-up">
-        <ComponentProject small/>
+        <ComponentProject small={small}/>
       </div>
     </div>
   );

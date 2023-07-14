@@ -4,10 +4,10 @@ import ProjectJson from "../../../src/data/Projects.json";
 import ProjectJsonSmall from "../../../src/data/ProjectJsonSmall.json";
 import ComponentProjectSingle from "./ComponentProjectSingle";
 
-function ComponentProject(small) {
+function ComponentProject({small}) {
   let ProjectMap = [];
   if (small) {
-    ProjectJsonSmall = ProjectJson.map((project) => {
+    ProjectMap = ProjectJsonSmall.map((project) => {
       return (
         <ComponentProjectSingle
           key={project.id}

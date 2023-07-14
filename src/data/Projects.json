@@ -30,20 +30,5 @@
         "btnTitleHref": "https://github.com/mohamed404eg/to-do-list",
         "btnTitle2": "Demo |>",
         "btnTitleHref2": "https://pivotal-triode-366120.web.app/"
-    },
-    {
-        "id": 3,
-        "src": "https://github.com/mohamed404eg/portfolioreact/blob/main/src/assets/Projects/hosting.png?raw=true",
-        "tag": [
-            "HTML",
-            "CSS",
-            "JS "
-        ],
-        "title": "hosting",
-        "description": "hosting",
-        "btnTitle": "Learn  More",
-        "btnTitleHref": "https://github.com/mohamed404eg/hosting",
-        "btnTitle2": "Demo |>",
-        "btnTitleHref2": "https://mohamed404eg.github.io/hosting/"
     }
 ]
